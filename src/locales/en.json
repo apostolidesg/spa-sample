@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "logo": {
+      "name": "John Doe,",
+      "title": "Ph.D. - Psychologist"
+    },
+    "routes": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "language": "EN"
+  }
+}

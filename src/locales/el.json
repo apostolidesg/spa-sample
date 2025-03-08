@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "logo": {
+      "name": "John Doe,",
+      "title": "Διδάκτωρ Ψυχολόγος"
+    },
+    "routes": {
+      "home": "Αρχική",
+      "about": "Σχετικά",
+      "services": "Υπηρεσίες",
+      "contact": "Επικοινωνία"
+    },
+    "language": "GR"
+  }
+}
