@@ -39,5 +39,8 @@
       "description2": "I’m an item. Click here to edit me.",
       "description3": "I’m an item. Click here to edit me."
     }
+  },
+  "footer": {
+    "copyrights": "2030 by John Doe. All Rights Reserved."
   }
 }
