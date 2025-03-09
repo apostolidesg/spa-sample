@@ -91,10 +91,12 @@ export default {
 @use "../assets/scss/variables" as *;
 
 .navigation-bar {
-  position: relative;
+  position: sticky;
+  top: 0;
   background: $background-color-primary;
   color: $color-primary;
   padding: 2em 4em;
+  z-index: 3;
 
   &__wrapper {
     display: flex;

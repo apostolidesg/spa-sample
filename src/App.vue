@@ -19,13 +19,11 @@ export default {
 <style lang="scss">
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 #app {
-  height: 100%;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }

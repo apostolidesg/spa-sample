@@ -15,7 +15,20 @@
         :imageAlt="$t('about.imageAlt')"
         alignment="right"
         :title="$t('about.title')"
-        :description="$t('about.description')"
+        :description="['about.description']"
+      />
+      <ImageTextBlock
+        :imageSrc="educationImage"
+        :imageAlt="$t('about.education.imageAlt')"
+        alignment="left"
+        :title="$t('about.education.title')"
+        :description="[
+          'about.education.description0',
+          'about.education.description1',
+          'about.education.description2',
+          'about.education.description3',
+        ]"
+        :listDecorations="true"
       />
     </div>
   </div>
@@ -26,6 +39,7 @@ import HeroBlock from "../components/HeroBlock.vue";
 import SectionSeparator from "../components/common/SectionSeparator.vue";
 import ImageTextBlock from "../components/common/ImageTextBlock.vue";
 import aboutMeImage from "../assets/images/aboutMe.jpg";
+import educationImage from "../assets/images/education.jpg";
 
 export default {
   name: "Home",
@@ -37,6 +51,7 @@ export default {
   data() {
     return {
       aboutMeImage,
+      educationImage,
     };
   },
   methods: {

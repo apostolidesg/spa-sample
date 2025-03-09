@@ -30,6 +30,14 @@
     "hero": {
       "title": "Who is John Doe?",
       "description": "I'm a paragraph. I’m a great place for you to tell a story and let your users know a little more about you."
+    },
+    "education": {
+      "title": "Education",
+      "imageAlt": "Education Image",
+      "description0": "I’m an item. Click here to edit me.",
+      "description1": "I’m an item. Click here to edit me.",
+      "description2": "I’m an item. Click here to edit me.",
+      "description3": "I’m an item. Click here to edit me."
     }
   }
 }

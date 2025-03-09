@@ -18,7 +18,13 @@
     </div>
     <div class="image-text-block__content">
       <div class="image-text-block__content--title">{{ title }}</div>
-      <div class="image-text-block__content--descr">{{ description }}</div>
+      <div
+        v-for="item in description"
+        class="image-text-block__content--descr"
+        :class="{ bullet: listDecorations }"
+      >
+        {{ $t(`${item}`) }}
+      </div>
     </div>
   </div>
 </template>
@@ -45,8 +51,12 @@ export default {
       default: "",
     },
     description: {
-      type: String,
-      default: "",
+      type: Array,
+      default: [],
+    },
+    listDecorations: {
+      type: Boolean,
+      default: false,
     },
   },
 };
@@ -59,6 +69,7 @@ export default {
   display: flex;
   align-items: center;
   gap: 2em;
+  margin-bottom: 5em;
 
   &__image,
   &__content {
@@ -117,12 +128,21 @@ export default {
       font-size: 1.5em;
       color: $color-secondary;
     }
+    .bullet {
+      display: list-item;
+      list-style-type: disc;
+      margin-left: 20px;
+    }
   }
 }
 @media (max-width: $breakpoint-tablet) {
   .image-text-block {
     flex-direction: column;
     gap: 3em;
+
+    &__image {
+      order: 1;
+    }
 
     &__content {
       &--title {
