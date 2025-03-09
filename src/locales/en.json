@@ -11,5 +11,13 @@
       "contact": "Contact"
     },
     "language": "EN"
+  },
+  "home": {
+    "hero": {
+      "title": "Reliable & Accessible to All",
+      "name": "John Doe",
+      "subtitle": "Ph.D. - Psychologist",
+      "buttonText": "Get Started"
+    }
   }
 }

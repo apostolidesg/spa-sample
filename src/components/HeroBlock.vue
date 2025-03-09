@@ -1,0 +1,93 @@
+<template>
+  <div class="hero-block">
+    <div class="hero-block__image"></div>
+    <div class="hero-block__text">
+      <div class="hero-block__text--content">
+        <span class="hero-block__text--content-title">{{
+          $t("home.hero.title")
+        }}</span>
+        <span class="hero-block__text--content-name">{{
+          $t("home.hero.name")
+        }}</span>
+        <span class="hero-block__text--content-subtitle">{{
+          $t("home.hero.subtitle")
+        }}</span>
+        <button class="hero-block__text--content-button" @click="onButtonClick">
+          {{ $t("home.hero.buttonText") }}
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    onButtonClick() {
+      this.$emit("button-click");
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+@use "../assets/scss/variables" as *;
+$hero-image: url("../assets/images/heroImage.jpg");
+
+.hero-block {
+  display: flex;
+  height: 90vh;
+
+  &__image {
+    flex: 2;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      $hero-image no-repeat center center/cover;
+  }
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background: $background-color-secondary;
+    padding: 0 2rem;
+
+    &--content {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      &-title {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: $color-secondary;
+      }
+      &-name {
+        font-size: 2em;
+        font-weight: 700;
+        color: $background-color-primary;
+      }
+      &-subtitle {
+        font-size: 1.5em;
+        color: $background-color-primary;
+      }
+      &-button {
+        width: 80%;
+        font-size: 1em;
+        font-weight: 700;
+        padding: 1em 2em;
+        color: $color-primary;
+        background: $background-color-primary;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background: #064848d6;
+          color: #d8efed;
+        }
+      }
+    }
+  }
+}
+</style>
