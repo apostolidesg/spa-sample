@@ -1,7 +1,7 @@
 <template>
   <div class="navigation-bar">
     <div class="navigation-bar__wrapper">
-      <div class="navigation-bar__wrapper--title">
+      <div class="navigation-bar__wrapper--title" @click="navigateTo('/')">
         <div>{{ $t("navbar.logo.name") }}</div>
         <div>{{ $t("navbar.logo.title") }}</div>
       </div>
@@ -58,6 +58,7 @@ export default {
   },
   methods: {
     navigateTo(name) {
+      this.showCollapse = false;
       this.$router.push(name);
     },
     toggleLanguage() {
@@ -100,6 +101,10 @@ export default {
     &--title {
       flex: 1;
       line-height: 1.5em;
+      &:hover {
+        cursor: pointer;
+        color: $background-color-secondary;
+      }
     }
     &--toggle {
       display: none;
@@ -116,6 +121,15 @@ export default {
       align-items: center;
       flex: 1;
       gap: 2em;
+
+      &-item:hover {
+        cursor: pointer;
+        color: $background-color-secondary;
+      }
+    }
+    &--language-switcher:hover {
+      cursor: pointer;
+      color: $background-color-secondary;
     }
   }
   &__mobile--routes {
