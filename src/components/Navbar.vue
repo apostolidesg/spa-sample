@@ -44,6 +44,7 @@
 import { NAVIGATION_ITEMS } from "../constants/commonConstants";
 
 export default {
+  name: "NavBar",
   data() {
     return {
       routes: Object.values(NAVIGATION_ITEMS),

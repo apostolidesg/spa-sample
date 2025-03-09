@@ -22,6 +22,7 @@
 
 <script>
 export default {
+  name: "HeroBlock",
   methods: {
     onButtonClick() {
       this.$emit("button-click");
@@ -49,7 +50,7 @@ $hero-image: url("../assets/images/heroImage.jpg");
     align-items: center;
     flex: 1;
     background: $background-color-secondary;
-    padding: 0 2rem;
+    padding: 0 2em;
 
     &--content {
       display: flex;
@@ -83,8 +84,36 @@ $hero-image: url("../assets/images/heroImage.jpg");
         transition: background 0.3s ease, color 0.3s ease;
 
         &:hover {
-          background: #064848d6;
-          color: #d8efed;
+          background: $background-color-primary;
+          color: $background-color-secondary;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  .hero-block {
+    flex-direction: column;
+    &__image {
+      flex: 1;
+      height: 50vh;
+    }
+    &__text {
+      padding: 2em 1em;
+      &--content {
+        align-items: center;
+        &-title {
+          font-size: 1.4em;
+        }
+        &-name {
+          font-size: 1.25em;
+        }
+        &-subtitle {
+          font-size: 1em;
+        }
+        &-button {
+          font-size: 0.8em;
+          font-weight: 900;
         }
       }
     }
