@@ -1,35 +1,37 @@
 <template>
-  <div class="hero-section">
-    <HeroBlock
-      :title="$t('home.hero.title')"
-      :subtitle="$t('home.hero.subtitle')"
-      :button-text="$t('home.hero.buttonText')"
-      @button-click="handleButtonClick"
-    />
-  </div>
-  <SectionSeparator :content="$t('home.about.title')" theme="dark-green" />
-  <div class="about-section">
-    <div class="spa-container">
-      <ImageTextBlock
-        :imageSrc="aboutMeImage"
-        :imageAlt="$t('about.imageAlt')"
-        alignment="right"
-        :title="$t('about.title')"
-        :description="['about.description']"
+  <div class="home-page">
+    <div class="hero-section">
+      <HeroBlock
+        :title="$t('home.hero.title')"
+        :subtitle="$t('home.hero.subtitle')"
+        :button-text="$t('home.hero.buttonText')"
+        @button-click="handleButtonClick"
       />
-      <ImageTextBlock
-        :imageSrc="educationImage"
-        :imageAlt="$t('about.education.imageAlt')"
-        alignment="left"
-        :title="$t('about.education.title')"
-        :description="[
-          'about.education.description0',
-          'about.education.description1',
-          'about.education.description2',
-          'about.education.description3',
-        ]"
-        :listDecorations="true"
-      />
+    </div>
+    <SectionSeparator :content="$t('home.about.title')" theme="dark-green" />
+    <div class="about-section">
+      <div class="spa-container">
+        <ImageTextBlock
+          :imageSrc="aboutMeImage"
+          :imageAlt="$t('about.imageAlt')"
+          alignment="right"
+          :title="$t('about.title')"
+          :description="['about.description']"
+        />
+        <ImageTextBlock
+          :imageSrc="educationImage"
+          :imageAlt="$t('about.education.imageAlt')"
+          alignment="left"
+          :title="$t('about.education.title')"
+          :description="[
+            'about.education.description0',
+            'about.education.description1',
+            'about.education.description2',
+            'about.education.description3',
+          ]"
+          :listDecorations="true"
+        />
+      </div>
     </div>
   </div>
 </template>
