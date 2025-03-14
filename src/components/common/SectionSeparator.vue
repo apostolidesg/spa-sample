@@ -1,5 +1,5 @@
 <template>
-  <div class="section-separator">
+  <div class="section-separator" :class="[`section-separator--${theme}`]">
     <div
       class="section-separator__heading"
       :class="[`section-separator__heading--${theme}`]"
@@ -39,6 +39,12 @@ export default {
   align-items: center;
   gap: 0.5em;
   padding: 2rem 0;
+  &--white {
+    background-color: $background-color-primary;
+  }
+  &--dark-green {
+    background-color: $default-white;
+  }
 
   &__heading {
     font-size: 1em;

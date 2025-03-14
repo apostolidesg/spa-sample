@@ -34,3 +34,5 @@ export const NAVIGATION_ITEMS = {
     label: "navbar.routes.contact",
   },
 };
+
+export const FAQlength = 6;

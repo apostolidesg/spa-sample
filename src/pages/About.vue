@@ -28,6 +28,12 @@
         />
       </div>
     </div>
+    <SectionSeparator :content="$t('about.FAQ.title')" theme="white" />
+    <div class="faq-section">
+      <div class="spa-container">
+        <FAQ />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -37,6 +43,7 @@ import HeroBlockAbout from "../components/HeroBlockAbout.vue";
 import aboutMeImage from "../assets/images/aboutMe.jpg";
 import SectionSeparator from "../components/common/SectionSeparator.vue";
 import educationImage from "../assets/images/education.jpg";
+import FAQ from "../components/FAQ.vue";
 
 export default {
   name: "AboutSection",
@@ -44,6 +51,7 @@ export default {
     ImageTextBlock,
     HeroBlockAbout,
     SectionSeparator,
+    FAQ,
   },
   data() {
     return {
@@ -53,3 +61,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@use "../assets/scss/variables" as *;
+.faq-section {
+  background-color: $background-color-primary;
+}
+</style>

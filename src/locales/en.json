@@ -38,6 +38,33 @@
       "description1": "I’m an item. Click here to edit me.",
       "description2": "I’m an item. Click here to edit me.",
       "description3": "I’m an item. Click here to edit me."
+    },
+    "FAQ": {
+      "title": "FAQ",
+      "item-0": {
+        "question": "What is an FAQ section?",
+        "answer": "An FAQ section is a collection of common questions and answers related to a specific topic."
+      },
+      "item-1": {
+        "question": "Why do FAQs matter?",
+        "answer": "FAQs help users find answers to common questions quickly, improving user experience."
+      },
+      "item-2": {
+        "question": "Where can I add my FAQs?",
+        "answer": "You can add FAQs to your website, app, or documentation to assist users."
+      },
+      "item-3": {
+        "question": "How do I add a new question & answer?",
+        "answer": "You can add new questions and answers by editing your FAQ section in your CMS or code."
+      },
+      "item-4": {
+        "question": "Can I insert an image, video, or GIF in my FAQ?",
+        "answer": "Yes, you can embed media like images, videos, or GIFs to make your FAQ more engaging."
+      },
+      "item-5": {
+        "question": "How do I edit or remove the 'Frequently Asked Questions' title?",
+        "answer": "You can edit or remove the title by modifying the corresponding text in your code or CMS."
+      }
     }
   },
   "footer": {
