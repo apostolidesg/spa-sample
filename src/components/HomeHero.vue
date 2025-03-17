@@ -1,18 +1,18 @@
 <template>
-  <div class="hero-block">
-    <div class="hero-block__image"></div>
-    <div class="hero-block__text">
-      <div class="hero-block__text--content">
-        <span class="hero-block__text--content-title">{{
+  <div class="home-hero">
+    <div class="home-hero__image"></div>
+    <div class="home-hero__text">
+      <div class="home-hero__text--content">
+        <span class="home-hero__text--content-title">{{
           $t("home.hero.title")
         }}</span>
-        <span class="hero-block__text--content-name">{{
+        <span class="home-hero__text--content-name">{{
           $t("home.hero.name")
         }}</span>
-        <span class="hero-block__text--content-subtitle">{{
+        <span class="home-hero__text--content-subtitle">{{
           $t("home.hero.subtitle")
         }}</span>
-        <button class="hero-block__text--content-button" @click="onButtonClick">
+        <button class="home-hero__text--content-button" @click="onButtonClick">
           {{ $t("home.hero.buttonText") }}
         </button>
       </div>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "HeroBlock",
+  name: "HomeHero",
   methods: {
     onButtonClick() {
       this.$emit("button-click");
@@ -35,7 +35,7 @@ export default {
 @use "../assets/scss/variables" as *;
 $hero-image: url("../assets/images/heroImage.jpg");
 
-.hero-block {
+.home-hero {
   display: flex;
   height: 90vh;
 
@@ -92,7 +92,7 @@ $hero-image: url("../assets/images/heroImage.jpg");
   }
 }
 @media (max-width: $breakpoint-tablet) {
-  .hero-block {
+  .home-hero {
     flex-direction: column;
     &__image {
       flex: 1;

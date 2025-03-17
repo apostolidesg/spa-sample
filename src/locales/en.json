@@ -31,8 +31,7 @@
     "description": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.",
     "imageAlt": "John Doe",
     "hero": {
-      "title": "Who is John Doe?",
-      "description": "I'm a paragraph. I’m a great place for you to tell a story and let your users know a little more about you."
+      "title": "About us"
     },
     "education": {
       "title": "Education",
@@ -76,7 +75,10 @@
     "item_two": "I’m an item. Click here to edit me.",
     "item_three": "I’m an item. Click here to edit me.",
     "item_four": "I’m an item. Click here to edit me.",
-    "readMore": "Read More"
+    "readMore": "Read More",
+    "hero": {
+      "title": "Our Services"
+    }
   },
   "footer": {
     "copyrights": "2030 by John Doe. All Rights Reserved."

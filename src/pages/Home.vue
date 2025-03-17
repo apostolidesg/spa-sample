@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <div class="hero-section">
-      <HeroBlock
+      <HomeHero
         :title="$t('home.hero.title')"
         :subtitle="$t('home.hero.subtitle')"
         :button-text="$t('home.hero.buttonText')"
@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import HeroBlock from "../components/HeroBlock.vue";
+import HomeHero from "../components/HomeHero.vue";
 import SectionSeparator from "../components/common/SectionSeparator.vue";
 import ImageTextBlock from "../components/common/ImageTextBlock.vue";
 import aboutMeImage from "../assets/images/aboutMe.jpg";
@@ -56,7 +56,7 @@ import ServiceBlock from "../components/ServiceBlock.vue";
 export default {
   name: "Home",
   components: {
-    HeroBlock,
+    HomeHero,
     SectionSeparator,
     ImageTextBlock,
     ServiceBlock,

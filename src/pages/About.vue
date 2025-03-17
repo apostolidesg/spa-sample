@@ -1,7 +1,7 @@
 <template>
   <div class="about-page">
     <div class="hero-section">
-      <HeroBlockAbout />
+      <HeroBlock :title="$t('about.hero.title')" />
     </div>
     <SectionSeparator :content="$t('home.about.title')" theme="dark-green" />
     <div class="about-section">
@@ -39,7 +39,7 @@
 
 <script>
 import ImageTextBlock from "../components/common/ImageTextBlock.vue";
-import HeroBlockAbout from "../components/HeroBlockAbout.vue";
+import HeroBlock from "../components/common/HeroBlock.vue";
 import aboutMeImage from "../assets/images/aboutMe.jpg";
 import SectionSeparator from "../components/common/SectionSeparator.vue";
 import educationImage from "../assets/images/education.jpg";
@@ -49,7 +49,7 @@ export default {
   name: "AboutSection",
   components: {
     ImageTextBlock,
-    HeroBlockAbout,
+    HeroBlock,
     SectionSeparator,
     FAQ,
   },
