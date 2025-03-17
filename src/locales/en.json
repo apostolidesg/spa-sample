@@ -21,6 +21,9 @@
     },
     "about": {
       "title": "About"
+    },
+    "services": {
+      "title": "Services"
     }
   },
   "about": {
@@ -66,6 +69,14 @@
         "answer": "You can edit or remove the title by modifying the corresponding text in your code or CMS."
       }
     }
+  },
+  "services": {
+    "title": "How can we help?",
+    "item_one": "I’m an item. Click here to edit me.",
+    "item_two": "I’m an item. Click here to edit me.",
+    "item_three": "I’m an item. Click here to edit me.",
+    "item_four": "I’m an item. Click here to edit me.",
+    "readMore": "Read More"
   },
   "footer": {
     "copyrights": "2030 by John Doe. All Rights Reserved."

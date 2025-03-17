@@ -35,4 +35,23 @@ export const NAVIGATION_ITEMS = {
   },
 };
 
+export const SERVICE_ITEMS = [
+  {
+    index: 1,
+    value: "item_one",
+  },
+  {
+    index: 2,
+    value: "item_two",
+  },
+  {
+    index: 3,
+    value: "item_three",
+  },
+  {
+    index: 4,
+    value: "item_four",
+  },
+];
+
 export const FAQlength = 6;
