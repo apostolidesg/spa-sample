@@ -24,6 +24,9 @@
     },
     "services": {
       "title": "Services"
+    },
+    "contact": {
+      "title": "Contact"
     }
   },
   "about": {
@@ -75,9 +78,18 @@
     "item_two": "I’m an item. Click here to edit me.",
     "item_three": "I’m an item. Click here to edit me.",
     "item_four": "I’m an item. Click here to edit me.",
+    "item_one_extra_info": "Use this space to describe one of your services",
+    "item_two_extra_info": "Use this space to describe one of your services",
+    "item_three_extra_info": "Use this space to describe one of your services",
+    "item_four_extra_info": "Use this space to describe one of your services",
     "readMore": "Read More",
     "hero": {
       "title": "Our Services"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact us"
     }
   },
   "footer": {

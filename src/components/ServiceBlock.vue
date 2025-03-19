@@ -2,15 +2,23 @@
   <div class="service-block">
     <div class="service-block__title">{{ $t("services.title") }}</div>
 
-    <div class="service-block__wrapper">
+    <div
+      class="service-block__wrapper"
+      :class="{ 'service-block__wrapper-list': showExtraInfo }"
+    >
       <ServiceBlockItem
         v-for="service in services"
         :serviceIndex="service.index"
         :serviceItem="service.value"
+        :showExtraInfo="showExtraInfo"
       />
     </div>
 
-    <div class="service-block__button" @click="handleButtonClick">
+    <div
+      v-if="!showExtraInfo"
+      class="service-block__button"
+      @click="handleButtonClick"
+    >
       {{ buttonText }}
     </div>
   </div>
@@ -23,6 +31,10 @@ import { SERVICE_ITEMS } from "../constants/commonConstants";
 export default {
   name: "ServiceBlock",
   props: {
+    showExtraInfo: {
+      type: Boolean,
+      default: false,
+    },
     buttonText: {
       type: String,
       default: "",
@@ -59,6 +71,12 @@ export default {
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+  &__wrapper-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1em;
   }
   &__button {

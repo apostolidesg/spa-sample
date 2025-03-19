@@ -46,7 +46,7 @@ import educationImage from "../assets/images/education.jpg";
 import FAQ from "../components/FAQ.vue";
 
 export default {
-  name: "AboutSection",
+  name: "About",
   components: {
     ImageTextBlock,
     HeroBlock,

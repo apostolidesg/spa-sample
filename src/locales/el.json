@@ -24,6 +24,9 @@
     },
     "services": {
       "title": "Υπηρεσίες"
+    },
+    "contact": {
+      "title": "Επικοινωνία"
     }
   },
   "about": {
@@ -75,9 +78,18 @@
     "item_two": "Είμαι ένα στοιχείο. Κάντε κλικ εδώ για να με επεξεργαστείτε.",
     "item_three": "Είμαι ένα στοιχείο. Κάντε κλικ εδώ για να με επεξεργαστείτε.",
     "item_four": "Είμαι ένα στοιχείο. Κάντε κλικ εδώ για να με επεξεργαστείτε.",
+    "item_one_extra_info": "item_one_extra_info",
+    "item_two_extra_info": "item_two_extra_info",
+    "item_three_extra_info": "item_three_extra_info",
+    "item_four_extra_info": "item_four_extra_info",
     "readMore": "Περισσότερα",
     "hero": {
       "title": "Υπηρεσίες"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Επικοινωνία"
     }
   },
   "footer": {

@@ -7,6 +7,7 @@
     <div class="services-section">
       <div class="spa-container">
         <ServiceBlock
+          :showExtraInfo="true"
           :buttonText="$t('services.readMore')"
           @button-click="goTo('services')"
         />
@@ -20,7 +21,7 @@ import HeroBlock from "../components/common/HeroBlock.vue";
 import SectionSeparator from "../components/common/SectionSeparator.vue";
 import ServiceBlock from "../components/ServiceBlock.vue";
 export default {
-  name: "ServicesSection",
+  name: "Services",
   components: {
     HeroBlock,
     SectionSeparator,
