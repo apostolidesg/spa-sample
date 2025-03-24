@@ -39,6 +39,9 @@ export default {
 }
 @media (max-width: $breakpoint-tablet) {
   .hero-block {
+    &__text {
+      font-size: 3em;
+    }
   }
 }
 </style>

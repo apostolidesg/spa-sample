@@ -1,19 +1,25 @@
 <template>
-  <div class="service-block-item" @click="toggleShowExtra()">
-    <div class="service-block-item__number">
+  <div
+    class="service-block-item"
+    :class="{ 'service-block-item--background': !showIcon }"
+  >
+    <div v-if="showIcon" class="service-block-item__icon">
+      <i class="fa-solid fa-clipboard"></i>
+    </div>
+    <div v-else class="service-block-item__number">
       {{ serviceIndex }}
     </div>
-    <div class="service-block-item__description">
-      {{ serviceDescription }}
+    <div class="service-block-item__label">
+      <div class="service-block-item__label-title">
+        {{ $t(`services.${serviceItem}.title`) }}
+      </div>
+      <div v-if="showIcon" class="service-block-item__label-content">
+        {{ $t(`services.${serviceItem}.content`) }}
+      </div>
     </div>
-    <div v-show="expandInfo" class="service-block-item__extra-info">
-      {{ serviceExtraInfo }}
-    </div>
-    <div v-if="showExtraInfo" class="service-block-item__toggle">
-      <i
-        class="fa-solid fa-angle-right service-block-item__toggle-icon"
-        :class="{ 'is-expanded': expandInfo }"
-      ></i>
+    <div v-if="showIcon" class="service-block-item__extra-info">
+      <div>{{ $t(`services.${serviceItem}.duration`) }}</div>
+      <div>{{ $t(`services.${serviceItem}.price`) }}</div>
     </div>
   </div>
 </template>
@@ -30,27 +36,9 @@ export default {
       type: String,
       default: "",
     },
-    showExtraInfo: {
+    showIcon: {
       type: Boolean,
       default: false,
-    },
-  },
-  data() {
-    return {
-      expandInfo: false,
-    };
-  },
-  computed: {
-    serviceDescription() {
-      return this.$t(`services.${this.serviceItem}`);
-    },
-    serviceExtraInfo() {
-      return this.$t(`services.${this.serviceItem}_extra_info`);
-    },
-  },
-  methods: {
-    toggleShowExtra() {
-      this.showExtraInfo && (this.expandInfo = !this.expandInfo);
     },
   },
 };
@@ -61,59 +49,65 @@ export default {
 
 .service-block-item {
   display: flex;
-  justify-self: center;
+  width: 80%;
+  justify-content: space-around;
   align-items: center;
-  gap: 4em;
-  max-width: 80%;
-  background-color: $background-color-primary-light;
-  padding: 4em 2em;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
+  border-bottom: solid 1px white;
+  padding: 1em 0em;
+  gap: 1em;
 
-  &__number,
-  &__description,
-  &__extra-info,
-  &__toggle-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &--background {
+    width: auto;
+    background-color: $background-color-primary-light;
+    box-shadow: 0 4px 8px #0000001a;
+    border-radius: 10px;
+    padding: 2em;
+    border: none;
+    gap: 2em;
+  }
 
-    transition: display 3s ease;
+  &__number {
+    width: 20%;
+    text-align: center;
+    font-size: 2em;
+    color: $default-white;
   }
-  &__number,
-  &__toggle {
-    flex: 1;
-    font-size: 2.5em;
+
+  &__icon {
+    font-size: 1.5em;
+    color: #064848;
+    border: solid;
+    border-radius: 50%;
+    padding: 0.4em 0.5em;
+    background: #d8efed;
   }
-  &__description,
+  &__label {
+    width: 60%;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5em;
+
+    &-content {
+      font-size: 0.7em;
+    }
+  }
   &__extra-info {
-    flex: 2;
+    color: #d8efed;
     font-size: 1.2em;
-  }
-  &__toggle {
-    display: flex;
-    justify-content: center;
-    &-icon {
-      display: inline-block;
-      transition: transform 0.3s ease;
-    }
-
-    .is-expanded {
-      transform: rotate(180deg);
-    }
+    line-height: 1.5em;
   }
   @media (max-width: 768px) {
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
+    width: auto;
+    gap: 0.8em;
+    &__icon {
+      font-size: 1em;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+    &__label {
+      font-size: 1em;
+    }
+    &__extra-info {
+      font-size: 0.8em;
+      min-width: 50px;
     }
   }
 }

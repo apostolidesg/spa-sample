@@ -7,7 +7,7 @@
     <div class="services-section">
       <div class="spa-container">
         <ServiceBlock
-          :showExtraInfo="true"
+          :showIcon="true"
           :buttonText="$t('services.readMore')"
           @button-click="goTo('services')"
         />

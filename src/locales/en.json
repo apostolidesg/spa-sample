@@ -74,14 +74,30 @@
   },
   "services": {
     "title": "How can we help?",
-    "item_one": "I’m an item. Click here to edit me.",
-    "item_two": "I’m an item. Click here to edit me.",
-    "item_three": "I’m an item. Click here to edit me.",
-    "item_four": "I’m an item. Click here to edit me.",
-    "item_one_extra_info": "Use this space to describe one of your services",
-    "item_two_extra_info": "Use this space to describe one of your services",
-    "item_three_extra_info": "Use this space to describe one of your services",
-    "item_four_extra_info": "Use this space to describe one of your services",
+    "item_one": {
+      "title": "Cognitive Therapy",
+      "content": "Use this area to describe one of your services.",
+      "duration": "30 min",
+      "price": "20 €"
+    },
+    "item_two": {
+      "title": "Anxiety Management",
+      "content": "Use this area to describe one of your services.",
+      "duration": "30 min",
+      "price": "20 €"
+    },
+    "item_three": {
+      "title": "Couples Counseling",
+      "content": "Use this area to describe one of your services.",
+      "duration": "30 min",
+      "price": "20 €"
+    },
+    "item_four": {
+      "title": "Mindfulness",
+      "content": "Use this area to describe one of your services.",
+      "duration": "30 min",
+      "price": "20 €"
+    },
     "readMore": "Read More",
     "hero": {
       "title": "Our Services"

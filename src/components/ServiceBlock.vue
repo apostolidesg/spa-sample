@@ -4,18 +4,18 @@
 
     <div
       class="service-block__wrapper"
-      :class="{ 'service-block__wrapper-list': showExtraInfo }"
+      :class="{ 'service-block__wrapper-list': showIcon }"
     >
       <ServiceBlockItem
         v-for="service in services"
         :serviceIndex="service.index"
         :serviceItem="service.value"
-        :showExtraInfo="showExtraInfo"
+        :showIcon="showIcon"
       />
     </div>
 
     <div
-      v-if="!showExtraInfo"
+      v-if="!showIcon"
       class="service-block__button"
       @click="handleButtonClick"
     >
@@ -31,7 +31,7 @@ import { SERVICE_ITEMS } from "../constants/commonConstants";
 export default {
   name: "ServiceBlock",
   props: {
-    showExtraInfo: {
+    showIcon: {
       type: Boolean,
       default: false,
     },
@@ -74,6 +74,7 @@ export default {
     gap: 1em;
   }
   &__wrapper-list {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
