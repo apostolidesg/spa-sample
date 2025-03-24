@@ -54,4 +54,16 @@ export const SERVICE_ITEMS = [
   },
 ];
 
+export const CRITICS_ITEMS = [
+  {
+    value: "critic_one",
+  },
+  {
+    value: "critic_two",
+  },
+  {
+    value: "critic_three",
+  },
+];
+
 export const FAQlength = 6;

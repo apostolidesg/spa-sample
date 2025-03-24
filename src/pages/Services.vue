@@ -13,6 +13,12 @@
         />
       </div>
     </div>
+    <SectionSeparator :content="$t('services.critics')" theme="dark-green" />
+    <div class="critics-section">
+      <div class="spa-container">
+        <CriticsBlock />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -20,12 +26,15 @@
 import HeroBlock from "../components/common/HeroBlock.vue";
 import SectionSeparator from "../components/common/SectionSeparator.vue";
 import ServiceBlock from "../components/ServiceBlock.vue";
+import CriticsBlock from "../components/CriticsBlock.vue";
+
 export default {
   name: "Services",
   components: {
     HeroBlock,
     SectionSeparator,
     ServiceBlock,
+    CriticsBlock,
   },
   methods: {
     goTo(name) {

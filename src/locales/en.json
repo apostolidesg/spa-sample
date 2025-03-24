@@ -101,6 +101,19 @@
     "readMore": "Read More",
     "hero": {
       "title": "Our Services"
+    },
+    "critics": "Satisfied Customers",
+    "critic_one": {
+      "name": "Dave Reddington",
+      "content": "'I am a testimonial. Edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.'"
+    },
+    "critic_two": {
+      "name": "Amelia Banks",
+      "content": "'I am a testimonial. Edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.'"
+    },
+    "critic_three": {
+      "name": "Kenny Stutes",
+      "content": "'I am a testimonial. Edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.'"
     }
   },
   "contact": {
