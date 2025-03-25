@@ -66,4 +66,13 @@ export const CRITICS_ITEMS = [
   },
 ];
 
+export const LOCATIONS_ITEMS = [
+  {
+    value: "location_one",
+  },
+  {
+    value: "location_two",
+  },
+];
+
 export const FAQlength = 6;

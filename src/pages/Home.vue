@@ -42,6 +42,12 @@
         />
       </div>
     </div>
+    <SectionSeparator :content="$t('home.contact.title')" theme="light-green" />
+    <div class="contact-info-section">
+      <div class="spa-container">
+        <ContactInfoBlock />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -52,6 +58,7 @@ import ImageTextBlock from "../components/common/ImageTextBlock.vue";
 import aboutMeImage from "../assets/images/aboutMe.jpg";
 import educationImage from "../assets/images/education.jpg";
 import ServiceBlock from "../components/ServiceBlock.vue";
+import ContactInfoBlock from "../components/ContactInfoBlock.vue";
 
 export default {
   name: "Home",
@@ -60,6 +67,7 @@ export default {
     SectionSeparator,
     ImageTextBlock,
     ServiceBlock,
+    ContactInfoBlock,
   },
   data() {
     return {
@@ -79,5 +87,8 @@ export default {
 @use "../assets/scss/variables" as *;
 .services-section {
   background-color: $background-color-primary;
+}
+.contact-info-section {
+  background-color: $background-color-secondary;
 }
 </style>

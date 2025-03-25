@@ -119,6 +119,31 @@
   "contact": {
     "hero": {
       "title": "Contact us"
+    },
+    "workingHours": {
+      "title": "Working Hours",
+      "weekdays": "Monday-Friday: 9am to 7pm",
+      "saturday": "Saturday: 9am to 4pm",
+      "sunday": "Sunday: Closed"
+    },
+    "practiceLocations": {
+      "title": "Practice Locations",
+      "location_one": {
+        "name": "Saint Francis Hospital",
+        "street": "500 Terry Francine Street",
+        "city": "San Francisco, CA 94158",
+        "email": "info{'@'}mysite.com",
+        "tel": "Tel: 123-456-7890",
+        "fax": "Fax: 123-456-7890"
+      },
+      "location_two": {
+        "name": "Private Clinic Info",
+        "street": "500 Terry Francine Street",
+        "city": "San Francisco, CA 94158",
+        "email": "info{'@'}mysite.com",
+        "tel": "Tel: 123-456-7890",
+        "fax": "Fax: 123-456-7890"
+      }
     }
   },
   "footer": {

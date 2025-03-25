@@ -24,7 +24,8 @@ export default {
     theme: {
       type: String,
       default: "white",
-      validator: (value) => ["white", "dark-green"].includes(value),
+      validator: (value) =>
+        ["white", "dark-green", "light-green"].includes(value),
     },
   },
 };
@@ -45,6 +46,9 @@ export default {
   &--dark-green {
     background-color: $default-white;
   }
+  &--light-green {
+    background-color: $background-color-secondary;
+  }
 
   &__heading {
     font-size: 1em;
@@ -56,6 +60,9 @@ export default {
     &--dark-green {
       color: $background-color-primary;
     }
+    &--light-green {
+      color: $background-color-primary;
+    }
   }
   &__horizontal-line {
     width: 40px;
@@ -64,6 +71,9 @@ export default {
       background-color: $background-color-secondary;
     }
     &--dark-green {
+      background-color: $background-color-primary;
+    }
+    &--light-green {
       background-color: $background-color-primary;
     }
   }
