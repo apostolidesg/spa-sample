@@ -144,6 +144,14 @@
         "tel": "Tel: 123-456-7890",
         "fax": "Fax: 123-456-7890"
       }
+    },
+    "info": "Info",
+    "form": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address"
     }
   },
   "footer": {

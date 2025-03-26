@@ -21,6 +21,10 @@ export const ROUTES = {
 };
 
 export const NAVIGATION_ITEMS = {
+  HOME: {
+    name: "home",
+    label: "navbar.routes.home",
+  },
   ABOUT: {
     name: "about",
     label: "navbar.routes.about",

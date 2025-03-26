@@ -7,7 +7,7 @@ import Services from "../pages/Services.vue";
 import NotFound from "../pages/NotFound.vue";
 
 const routes = [
-  { ...ROUTES.HOME, component: Home },
+  { ...ROUTES.HOME, component: Home, alias: "/home" },
   { ...ROUTES.ABOUT, component: About },
   { ...ROUTES.SERVICES, component: Services },
   { ...ROUTES.CONTACT, component: Contact },
