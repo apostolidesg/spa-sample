@@ -151,7 +151,8 @@
       "lastName": "Last name",
       "email": "Email",
       "phone": "Phone",
-      "address": "Address"
+      "address": "Address",
+      "cta": "Submit"
     }
   },
   "footer": {

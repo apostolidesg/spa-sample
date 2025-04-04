@@ -121,35 +121,38 @@
       "title": "Επικοινωνία"
     },
     "workingHours": {
-      "title": "Working Hours",
-      "weekdays": "Monday-Friday: 9am to 7pm",
-      "saturday": "Saturday: 9am to 4pm",
-      "sunday": "Sunday: Closed"
+      "title": "Ωράριο Λειτουργίας",
+      "weekdays": "Δευτέρα-Παρασκευή: 9πμ έως 7μμ",
+      "saturday": "Σάββατο: 9πμ έως 4μμ",
+      "sunday": "Κυριακή: Κλειστά"
     },
     "practiceLocations": {
-      "title": "Practice Locations",
-      "locations": [
-        {
-          "HOSPITAL": {
-            "name": "Saint Francis Hospital",
-            "street": "500 Terry Francine Street",
-            "city": "San Francisco, CA 94158",
-            "email": "info{'@'}mysite.com",
-            "tel": "Tel: 123-456-7890",
-            "fax": "Fax: 123-456-7890"
-          }
-        },
-        {
-          "CLINIC": {
-            "name": "Private Clinic Info",
-            "street": "500 Terry Francine Street",
-            "city": "San Francisco, CA 94158",
-            "email": "info{'@'}mysite.com",
-            "tel": "Tel: 123-456-7890",
-            "fax": "Fax: 123-456-7890"
-          }
-        }
-      ]
+      "title": "Τοποθεσίες Πρακτικής",
+      "location_one": {
+        "name": "Νοσοκομείο Saint Francis",
+        "street": "Οδός Terry Francine 500",
+        "city": "Σαν Φρανσίσκο, CA 94158",
+        "email": "info{'@'}mysite.com",
+        "tel": "Τηλ: 123-456-7890",
+        "fax": "Φαξ: 123-456-7890"
+      },
+      "location_two": {
+        "name": "Ιδιωτική Κλινική",
+        "street": "Οδός Terry Francine 500",
+        "city": "Σαν Φρανσίσκο, CA 94158",
+        "email": "info{'@'}mysite.com",
+        "tel": "Τηλ: 123-456-7890",
+        "fax": "Φαξ: 123-456-7890"
+      }
+    },
+    "info": "Πληροφορίες",
+    "form": {
+      "firstName": "Όνομα",
+      "lastName": "Επώνυμο",
+      "email": "Email",
+      "phone": "Τηλέφωνο",
+      "address": "Διεύθυνση",
+      "cta": "Υποβολή"
     }
   },
   "footer": {
