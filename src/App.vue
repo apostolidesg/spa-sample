@@ -15,6 +15,20 @@ export default {
     Navbar,
     Footer,
   },
+  mounted() {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        registrations.forEach((registration) => registration.unregister());
+      });
+
+      // Clear cache API if available
+      if (window.caches) {
+        caches.keys().then((names) => {
+          names.forEach((name) => caches.delete(name));
+        });
+      }
+    }
+  },
 };
 </script>
 
