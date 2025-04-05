@@ -2,7 +2,7 @@
   <div ref="zoomContainer" class="zoom-container">
     <img
       ref="zoomImage"
-      :src="imageSrc"
+      :src="dynamicImageSrc"
       :alt="imageAlt"
       class="zoom-image"
       :style="{ transform: `scale(${scale})` }"
@@ -41,6 +41,11 @@ export default {
   },
   beforeUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
+  },
+  computed: {
+    dynamicImageSrc() {
+      return `/images/${this.imageSrc}.jpg`;
+    },
   },
   methods: {
     handleScroll() {

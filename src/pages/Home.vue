@@ -69,8 +69,8 @@ export default {
   },
   data() {
     return {
-      aboutMeImage: "/images/aboutMe.jpg",
-      educationImage: "/images/education.jpg",
+      aboutMeImage: "aboutMe",
+      educationImage: "education",
     };
   },
   methods: {
