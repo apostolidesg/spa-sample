@@ -69,7 +69,7 @@ export default {
   },
   data() {
     return {
-      aboutMeImage: "aboutMe",
+      aboutMeImage: "about",
       educationImage: "education",
     };
   },
