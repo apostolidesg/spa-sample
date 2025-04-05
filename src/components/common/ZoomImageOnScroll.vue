@@ -2,7 +2,7 @@
   <div ref="zoomContainer" class="zoom-container">
     <img
       ref="zoomImage"
-      :src="dynamicImageSrc"
+      src="/images/about.jpg"
       :alt="imageAlt"
       class="zoom-image"
       :style="{ transform: `scale(${scale})` }"
