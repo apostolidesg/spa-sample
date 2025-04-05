@@ -55,8 +55,6 @@
 import HomeHero from "../components/HomeHero.vue";
 import SectionSeparator from "../components/common/SectionSeparator.vue";
 import ImageTextBlock from "../components/common/ImageTextBlock.vue";
-import aboutMeImage from "../assets/images/aboutMe.jpg";
-import educationImage from "../assets/images/education.jpg";
 import ServiceBlock from "../components/ServiceBlock.vue";
 import ContactInfo from "../components/ContactInfo.vue";
 
@@ -71,8 +69,8 @@ export default {
   },
   data() {
     return {
-      aboutMeImage,
-      educationImage,
+      aboutMeImage: "/images/aboutMe.jpg",
+      educationImage: "/images/education.jpg",
     };
   },
   methods: {

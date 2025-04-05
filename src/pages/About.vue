@@ -40,9 +40,7 @@
 <script>
 import ImageTextBlock from "../components/common/ImageTextBlock.vue";
 import HeroBlock from "../components/common/HeroBlock.vue";
-import aboutMeImage from "../assets/images/aboutMe.jpg";
 import SectionSeparator from "../components/common/SectionSeparator.vue";
-import educationImage from "../assets/images/education.jpg";
 import FAQ from "../components/FAQ.vue";
 
 export default {
@@ -55,8 +53,8 @@ export default {
   },
   data() {
     return {
-      aboutMeImage,
-      educationImage,
+      aboutMeImage: "/images/aboutMe.jpg",
+      educationImage: "/images/education.jpg",
     };
   },
 };
