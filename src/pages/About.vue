@@ -53,7 +53,7 @@ export default {
   },
   data() {
     return {
-      aboutMeImage: "/images/aboutMe.jpg",
+      aboutMeImage: "/images/about.jpg",
       educationImage: "/images/education.jpg",
     };
   },

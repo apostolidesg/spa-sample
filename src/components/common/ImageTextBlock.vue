@@ -4,12 +4,10 @@
       class="image-text-block__image"
       :class="{ 'image-text-block__image--right': alignment === 'right' }"
     >
-      <ZoomImageOnScroll
-        :imageSrc="imageSrc"
-        :imageAlt="imageAlt"
-        :initialScale="2"
-        :finalScale="1"
-        class="image-text-block__image--scallable"
+      <img
+        :src="imageSrc"
+        :alt="imageAlt"
+        class="image-text-block__image--element"
       />
       <div class="image-text-block__image-wrapper">
         <div
@@ -36,8 +34,6 @@
 </template>
 
 <script>
-import ZoomImageOnScroll from "./ZoomImageOnScroll.vue";
-
 export default {
   name: "ImageTextBlock",
   props: {
@@ -67,7 +63,6 @@ export default {
       default: false,
     },
   },
-  components: { ZoomImageOnScroll },
 };
 </script>
 
@@ -89,7 +84,7 @@ export default {
 
   &__image {
     position: relative;
-    &--scallable {
+    &--element {
       width: 100%;
       max-width: 400px;
       height: auto;
