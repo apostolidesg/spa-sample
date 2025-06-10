@@ -19,7 +19,7 @@
     </div>
     <div v-if="showIcon" class="service-block-item__extra-info">
       <div>{{ $t(`services.${serviceItem}.duration`) }}</div>
-      <div>{{ $t(`services.${serviceItem}.price`) }}</div>
+      <!-- <div>{{ $t(`services.${serviceItem}.price`) }}</div> -->
     </div>
   </div>
 </template>

@@ -1,8 +1,8 @@
 {
   "navbar": {
     "logo": {
-      "name": "John Doe,",
-      "title": "Ph.D. - Psychologist"
+      "name": "Alexandros Rembelos,",
+      "title": "Psychologist & CBT Therapist"
     },
     "routes": {
       "home": "Home",
@@ -10,13 +10,13 @@
       "services": "Services",
       "contact": "Contact"
     },
-    "language": "EN"
+    "language": "GR"
   },
   "home": {
     "hero": {
       "title": "Reliable & Accessible to All",
-      "name": "John Doe",
-      "subtitle": "Ph.D. - Psychologist",
+      "name": "Alexandros Rembelos",
+      "subtitle": "Psychologist & CBT Therapist",
       "buttonText": "Get Started"
     },
     "about": {
@@ -30,73 +30,84 @@
     }
   },
   "about": {
-    "title": "About John Doe",
-    "description": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.",
-    "imageAlt": "John Doe",
+    "title": "I'm Alexandros Rembelos",
+    "description": "I specialize in Cognitive Behavioral Therapy (CBT) and hold a degree from the University of Crete. I have experience working with adults in individual therapy sessions, as well as supporting vulnerable groups and children on the autism spectrum.I offer both online and in-person sessions, focusing on self-awareness, emotional regulation, and improving quality of life. I believe in building a trust-based therapeutic relationship, grounded in compassion, acceptance, and honesty.",
+    "imageAlt": "Alexandros Rembelos",
     "hero": {
       "title": "About us"
     },
     "education": {
       "title": "Education",
       "imageAlt": "Education Image",
-      "description0": "I’m an item. Click here to edit me.",
-      "description1": "I’m an item. Click here to edit me.",
-      "description2": "I’m an item. Click here to edit me.",
-      "description3": "I’m an item. Click here to edit me."
+      "description0": "Psychology – University of Crete, School of Social Sciences.",
+      "description1": "Cognitive Behavioral Therapy (CBT) – University of Crete, Department of Psychiatry & Behavioral Sciences.",
+      "description2": "School Psychology and Educational Counseling – University of the Aegean."
     },
     "FAQ": {
-      "title": "FAQ",
+      "title": "FAQs",
       "item-0": {
-        "question": "What is an FAQ section?",
-        "answer": "An FAQ section is a collection of common questions and answers related to a specific topic."
+        "question": "Who is Alexandros Rempelos?",
+        "answer": "A psychologist specializing in Cognitive Behavioral Therapy (CBT). He works with children, adolescents, and adults, offering individual sessions and educational interventions."
       },
       "item-1": {
-        "question": "Why do FAQs matter?",
-        "answer": "FAQs help users find answers to common questions quickly, improving user experience."
+        "question": "Where do sessions take place?",
+        "answer": "At his private office in Cholargos (Metonou 71) and via online sessions."
       },
       "item-2": {
-        "question": "Where can I add my FAQs?",
-        "answer": "You can add FAQs to your website, app, or documentation to assist users."
+        "question": "What services does he offer?",
+        "answer": "Individual psychotherapy (CBT) Parental counseling Educational programs (stress management, skill development, self-improvement)"
       },
       "item-3": {
-        "question": "How do I add a new question & answer?",
-        "answer": "You can add new questions and answers by editing your FAQ section in your CMS or code."
+        "question": "Which age groups does he work with?",
+        "answer": "Children, adolescents, and adults - both individually and through group seminars."
       },
       "item-4": {
-        "question": "Can I insert an image, video, or GIF in my FAQ?",
-        "answer": "Yes, you can embed media like images, videos, or GIFs to make your FAQ more engaging."
+        "question": "What is Cognitive Behavioral Therapy (CBT)?",
+        "answer": "A therapeutic approach for managing negative thoughts and behaviors, with proven effectiveness."
       },
       "item-5": {
-        "question": "How do I edit or remove the 'Frequently Asked Questions' title?",
-        "answer": "You can edit or remove the title by modifying the corresponding text in your code or CMS."
+        "question": "Does he have experience with special populations?",
+        "answer": "Yes, with children on the autism spectrum, vulnerable adolescent groups, and parental counseling in educational settings."
+      },
+      "item-6": {
+        "question": "How can I book an appointment?",
+        "answer": "Via email (alexandrosrempelos@gmail.com) or phone (+30 6974434381) for in-person or online sessions."
+      },
+      "item-7": {
+        "question": "Does he offer seminars?",
+        "answer": "Yes, online personal development and parenting seminars on topics like stress management and emotional development."
+      },
+      "item-8": {
+        "question": "In which areas does he practice?",
+        "answer": "Based in Cholargos (Athens) with additional collaborations in Lamia and Crete. Also offers online services."
       }
     }
   },
   "services": {
     "title": "How can we help?",
     "item_one": {
-      "title": "Cognitive Therapy",
-      "content": "Use this area to describe one of your services.",
+      "title": "Individual CBT Therapy",
+      "content": "Therapeutic support based on Cognitive Behavioral Therapy for adults and adolescents.",
       "duration": "30 min",
-      "price": "20 €"
+      "price": "€20"
     },
     "item_two": {
-      "title": "Anxiety Management",
-      "content": "Use this area to describe one of your services.",
+      "title": "Parenting Counseling",
+      "content": "Guidance and skills enhancement for parents to support positive upbringing and empathetic communication.",
       "duration": "30 min",
-      "price": "20 €"
+      "price": "€20"
     },
     "item_three": {
-      "title": "Couples Counseling",
-      "content": "Use this area to describe one of your services.",
+      "title": "Support for Vulnerable Groups",
+      "content": "Targeted interventions for children on the autism spectrum and other vulnerable social groups.",
       "duration": "30 min",
-      "price": "20 €"
+      "price": "€20"
     },
     "item_four": {
-      "title": "Mindfulness",
-      "content": "Use this area to describe one of your services.",
+      "title": "Online Psychotherapy Sessions",
+      "content": "Individual psychotherapy sessions online or in person, with emphasis on accessibility and flexibility.",
       "duration": "30 min",
-      "price": "20 €"
+      "price": "€20"
     },
     "readMore": "Read More",
     "hero": {
@@ -129,11 +140,11 @@
     "practiceLocations": {
       "title": "Practice Locations",
       "location_one": {
-        "name": "Saint Francis Hospital",
-        "street": "500 Terry Francine Street",
-        "city": "San Francisco, CA 94158",
-        "email": "info{'@'}mysite.com",
-        "tel": "Tel: 123-456-7890",
+        "name": "Private Clinic",
+        "street": "Metonos 71, Cholargos",
+        "city": "15561, Athens, Attica",
+        "email": "alexandrosrempelos{'@'}gmail.com",
+        "tel": "Tel: +30 697 443 4381",
         "fax": "Fax: 123-456-7890"
       },
       "location_two": {
@@ -156,6 +167,6 @@
     }
   },
   "footer": {
-    "copyrights": "2030 by John Doe. All Rights Reserved."
+    "copyrights": "2025 by Alexandros Rembelos. All Rights Reserved."
   }
 }

@@ -102,6 +102,7 @@ $hero-image: url("../assets/images/heroImage.jpg");
       padding: 2em 1em;
       &--content {
         align-items: center;
+        text-align: center;
         &-title {
           font-size: 1.4em;
         }

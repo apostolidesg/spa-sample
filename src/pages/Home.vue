@@ -27,7 +27,6 @@
             'about.education.description0',
             'about.education.description1',
             'about.education.description2',
-            'about.education.description3',
           ]"
           :listDecorations="true"
         />
@@ -69,7 +68,7 @@ export default {
   },
   data() {
     return {
-      aboutMeImage: "/images/about.jpg",
+      aboutMeImage: "/images/about.png",
       educationImage: "/images/education.jpg",
     };
   },

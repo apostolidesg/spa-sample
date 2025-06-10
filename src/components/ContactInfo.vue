@@ -39,7 +39,7 @@
           <span>{{
             $t(`contact.practiceLocations.${location.value}.tel`)
           }}</span>
-          <span>{{
+          <span v-if="hasFax">{{
             $t(`contact.practiceLocations.${location.value}.fax`)
           }}</span>
         </div>
@@ -56,6 +56,7 @@ export default {
   data() {
     return {
       locations: LOCATIONS_ITEMS,
+      hasFax: false,
     };
   },
 };
