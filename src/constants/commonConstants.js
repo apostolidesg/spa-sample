@@ -15,6 +15,10 @@ export const ROUTES = {
     name: "contact",
     path: "/contact",
   },
+  SERVICES_CONTACT: {
+    name: "services-contact",
+    path: "/services-contact",
+  },
   NOT_FOUND: {
     path: "/:pathMatch(.*)*",
   },
@@ -29,13 +33,17 @@ export const NAVIGATION_ITEMS = {
     name: "about",
     label: "navbar.routes.about",
   },
-  SERVICES: {
-    name: "services",
-    label: "navbar.routes.services",
-  },
-  CONTACT: {
-    name: "contact",
-    label: "navbar.routes.contact",
+  // SERVICES: {
+  //   name: "services",
+  //   label: "navbar.routes.services",
+  // },
+  // CONTACT: {
+  //   name: "contact",
+  //   label: "navbar.routes.contact",
+  // },
+  SERVICES_CONTACT: {
+    name: "services-contact",
+    label: "navbar.routes.servicesAndContact",
   },
 };
 

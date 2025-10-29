@@ -70,7 +70,7 @@ export default {
       this.showCollapse = !this.showCollapse;
     },
     handleResize() {
-      if (window.innerWidth >= 576) {
+      if (window.innerWidth >= 768) {
         this.showCollapse = false;
         this.isMobile = false;
       } else {
@@ -122,8 +122,8 @@ export default {
       display: flex;
       justify-content: end;
       align-items: center;
-      flex: 1;
-      gap: 2em;
+      flex: 2;
+      gap: 1em;
 
       &-item:hover {
         cursor: pointer;
@@ -139,7 +139,7 @@ export default {
     display: none;
   }
 }
-@media (max-width: $breakpoint-mobile) {
+@media (max-width: $breakpoint-tablet) {
   .navigation-bar {
     &__wrapper {
       &--toggle {

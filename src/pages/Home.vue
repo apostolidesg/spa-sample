@@ -37,7 +37,7 @@
       <div class="spa-container">
         <ServiceBlock
           :buttonText="$t('services.readMore')"
-          @button-click="goTo('services')"
+          @button-click="goTo('services-contact')"
         />
       </div>
     </div>

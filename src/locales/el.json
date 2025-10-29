@@ -8,7 +8,8 @@
       "home": "Αρχική",
       "about": "Σχετικά",
       "services": "Υπηρεσίες",
-      "contact": "Επικοινωνία"
+      "contact": "Επικοινωνία",
+      "servicesAndContact": "Υπηρεσίες & Επικοινωνία"
     },
     "language": "EN"
   },
@@ -164,6 +165,11 @@
       "phone": "Τηλέφωνο",
       "address": "Διεύθυνση",
       "cta": "Υποβολή"
+    }
+  },
+  "servicesAndContact": {
+    "hero": {
+      "title": "Υπηρεσίες & Επικοινωνία"
     }
   },
   "footer": {
