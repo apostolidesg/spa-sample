@@ -3,7 +3,7 @@
   <router-view v-slot="{ Component }">
     <component :is="Component" :key="$route.path" />
   </router-view>
-  <Footer />
+  <Footer v-if="hasGDPR" />
 </template>
 
 <script>
@@ -14,6 +14,11 @@ export default {
   components: {
     Navbar,
     Footer,
+  },
+  data() {
+    return {
+      hasGDPR: false,
+    };
   },
 };
 </script>

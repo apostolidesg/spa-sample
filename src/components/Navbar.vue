@@ -125,6 +125,10 @@ export default {
       flex: 2;
       gap: 1em;
 
+      &-item {
+        text-align: center;
+      }
+
       &-item:hover {
         cursor: pointer;
         color: $background-color-secondary;

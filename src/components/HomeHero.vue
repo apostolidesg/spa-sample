@@ -3,9 +3,6 @@
     <div class="home-hero__image"></div>
     <div class="home-hero__text">
       <div class="home-hero__text--content">
-        <span class="home-hero__text--content-title">{{
-          $t("home.hero.title")
-        }}</span>
         <span class="home-hero__text--content-name">{{
           $t("home.hero.name")
         }}</span>

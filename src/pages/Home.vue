@@ -1,12 +1,7 @@
 <template>
   <div class="home-page">
     <div class="hero-section">
-      <HomeHero
-        :title="$t('home.hero.title')"
-        :subtitle="$t('home.hero.subtitle')"
-        :button-text="$t('home.hero.buttonText')"
-        @button-click="goTo('about')"
-      />
+      <HomeHero @button-click="goTo('about')" />
     </div>
     <SectionSeparator :content="$t('home.about.title')" theme="dark-green" />
     <div class="about-section">
