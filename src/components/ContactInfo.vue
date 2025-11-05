@@ -35,6 +35,34 @@
           <span>{{
             $t(`contact.practiceLocations.${location.value}.email`)
           }}</span>
+          <div>
+            <a
+              :href="
+                $t(`contact.practiceLocations.${location.value}.instagram`)
+              "
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram"></i>
+              {{
+                $t(`contact.practiceLocations.${location.value}.instagramLabel`)
+              }}
+            </a>
+          </div>
+          <div>
+            <a
+              :href="$t(`contact.practiceLocations.${location.value}.facebook`)"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook"></i>
+              {{
+                $t(`contact.practiceLocations.${location.value}.facebookLabel`)
+              }}
+            </a>
+          </div>
           <div class="line-separator"></div>
           <span>{{
             $t(`contact.practiceLocations.${location.value}.tel`)
@@ -111,6 +139,22 @@ export default {
     height: 2px;
     background-color: #064848;
     margin: 20px 0;
+  }
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    color: $background-color-primary;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    i {
+      font-size: 1.3em;
+    }
+
+    &:hover {
+      color: $default-black;
+    }
   }
   @media (max-width: $breakpoint-laptop) {
     font-size: 0.8em;
