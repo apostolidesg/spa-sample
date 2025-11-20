@@ -47,11 +47,11 @@
       "title": "FAQs",
       "item-0": {
         "question": "Who is Alexandros Rempelos?",
-        "answer": "A psychologist specializing in Cognitive Behavioral Therapy (CBT). He works with children, adolescents, and adults, offering individual sessions and educational interventions."
+        "answer": "A psychologist specializing in Cognitive-Behavioral Therapy (CBT), who supports adults, adolescents, and children. They help adults manage anxiety, stress, depressive symptoms, panic attacks, and relationship difficulties, providing practical strategies for better balance and mental well-being.\n \nAt the same time, they work with parents, children on the autism spectrum, and adolescents from vulnerable groups, offering counseling and educational interventions. The approach focuses on the active participation of the individual and the development of self-management skills, so you feel more prepared to face everyday challenges."
       },
       "item-1": {
         "question": "Where do sessions take place?",
-        "answer": "At his private office in Cholargos (Metonou 71) and via online sessions."
+        "answer": "At his private office in Cholargos (Metonou 71), in Chalkida (Filonos 13) and via online sessions."
       },
       "item-2": {
         "question": "What services does he offer?",
@@ -63,11 +63,11 @@
       },
       "item-4": {
         "question": "What is Cognitive Behavioral Therapy (CBT)?",
-        "answer": "A therapeutic approach for managing negative thoughts and behaviors, with proven effectiveness."
+        "answer": "Cognitive-Behavioral Therapy (CBT) is a modern and scientifically proven method of psychotherapy that helps a person identify and change dysfunctional patterns of thought and behavior.\n \n Through a structured and collaborative process, the client learns to understand how their thoughts affect their feelings and actions, and to adopt more realistic and helpful ways of thinking, thereby improving their mental well-being and daily life.\n \nCBT has been proven particularly effective in managing:\n \n• Anxiety and panic attacks\n • Depressive symptoms\n • Phobias and obsessions\n • Low self-esteem\n • Relationship and communication difficulties\n \nIt is a practical and targeted therapeutic approach that emphasizes the active participation of the individual and the continuous development of self-management skills."
       },
       "item-5": {
         "question": "Does he have experience with special populations?",
-        "answer": "Yes, with children on the autism spectrum, vulnerable adolescent groups, and parental counseling in educational settings."
+        "answer": "Yes. He has worked with adults with psychotic, anxiety, and depressive disorders, with individuals facing difficulties in managing stress, and with professional or personal adjustment issues, as well as with children on the autism spectrum, vulnerable adolescent groups, and parents, providing counseling and support in an educational and social context."
       },
       "item-6": {
         "question": "How can I book an appointment?",
@@ -88,25 +88,25 @@
     "item_one": {
       "title": "Individual CBT Therapy",
       "content": "Therapeutic support based on Cognitive Behavioral Therapy for adults and adolescents.",
-      "duration": "30 min",
+      "duration": "60 min",
       "price": "€20"
     },
     "item_two": {
       "title": "Parenting Counseling",
       "content": "Guidance and skills enhancement for parents to support positive upbringing and empathetic communication.",
-      "duration": "30 min",
+      "duration": "60 min",
       "price": "€20"
     },
     "item_three": {
       "title": "Support for Vulnerable Groups",
       "content": "Targeted interventions for children on the autism spectrum and other vulnerable social groups.",
-      "duration": "30 min",
+      "duration": "60 min",
       "price": "€20"
     },
     "item_four": {
       "title": "Online Psychotherapy Sessions",
       "content": "Individual psychotherapy sessions online or in person, with emphasis on accessibility and flexibility.",
-      "duration": "30 min",
+      "duration": "60 min",
       "price": "€20"
     },
     "readMore": "Read More",
@@ -133,16 +133,16 @@
     },
     "workingHours": {
       "title": "Working Hours",
-      "weekdays": "Monday-Friday: 9am to 7pm",
+      "weekdays": "Monday-Friday: 9am to 9pm",
       "saturday": "Saturday: 9am to 4pm",
       "sunday": "Sunday: Closed"
     },
     "practiceLocations": {
-      "title": "Practice Locations",
+      "title": "Locations",
       "location_one": {
-        "name": "Private Clinic",
-        "street": "Metonos 71, Cholargos",
-        "city": "15561, Athens, Attica",
+        "name": "Private Office",
+        "street": "Metonos 71, Cholargos 15561, Attica",
+        "city": "Filonos 13, Chalkida 34132, Euboea",
         "email": "alexandrosrempelos{'@'}gmail.com",
         "instagram": "https://www.instagram.com/alexandros_rempelos",
         "instagramLabel": "Follow me on Instagram",
@@ -152,11 +152,15 @@
         "fax": "Fax: 123-456-7890"
       },
       "location_two": {
-        "name": "Private Clinic Info",
-        "street": "500 Terry Francine Street",
-        "city": "San Francisco, CA 94158",
-        "email": "info{'@'}mysite.com",
-        "tel": "Tel: 123-456-7890",
+        "name": "Private Office",
+        "street": "Filonos 13",
+        "city": "34132, Chalkida",
+        "email": "alexandrosrempelos{'@'}gmail.com",
+        "instagram": "https://www.instagram.com/alexandros_rempelos",
+        "instagramLabel": "Follow me on Instagram",
+        "facebook": "https://www.facebook.com/alexandrosrempelosCBT",
+        "facebookLabel": "Follow me on Facebook",
+        "tel": "Tel: +30 697 443 4381",
         "fax": "Fax: 123-456-7890"
       }
     },

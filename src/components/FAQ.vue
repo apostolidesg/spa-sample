@@ -11,7 +11,7 @@
         </div>
         <div
           v-if="isExpandedItem(index)"
-          class="faq-list__item--answer"
+          class="faq-list__item--answer testimonial"
           @click="toggleAccordion(index)"
         >
           {{ $t(`about.FAQ.item-${index}.answer`) }}

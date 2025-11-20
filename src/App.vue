@@ -34,4 +34,8 @@ body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.testimonial {
+  white-space: pre-line;
+}
 </style>
