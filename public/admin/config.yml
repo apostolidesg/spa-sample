@@ -52,9 +52,11 @@ collections:
     folder: "content/el"
     create: false
     delete: false
-    slug: "common"
-    filter: {field: "file_name", value: "common"}
+    extension: "json"
+    format: "json"
+    slug: "{{file_name}}"
     identifier_field: "file_name"
+    filter: {field: "file_name", value: "common"}
     fields:
       - {label: "File Name", name: "file_name", widget: "hidden", default: "common"}
       - label: "Navbar"
@@ -88,9 +90,11 @@ collections:
     folder: "content/en"
     create: false
     delete: false
-    slug: "home"
-    filter: {field: "file_name", value: "home"}
+    extension: "json"
+    format: "json"
+    slug: "{{file_name}}"
     identifier_field: "file_name"
+    filter: {field: "file_name", value: "home"}
     fields:
       - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
       - label: "Hero Section"
@@ -121,9 +125,11 @@ collections:
     folder: "content/el"
     create: false
     delete: false
-    slug: "home"
-    filter: {field: "file_name", value: "home"}
+    extension: "json"
+    format: "json"
+    slug: "{{file_name}}"
     identifier_field: "file_name"
+    filter: {field: "file_name", value: "home"}
     fields:
       - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
       - label: "Hero Section"
