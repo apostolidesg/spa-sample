@@ -16,6 +16,7 @@ collections:
     delete: false
     slug: "common"
     filter: {field: "file_name", value: "common"}
+    identifier_field: "file_name"
     fields:
       - {label: "File Name", name: "file_name", widget: "hidden", default: "common"}
       - label: "Navbar"
@@ -51,6 +52,7 @@ collections:
     delete: false
     slug: "common"
     filter: {field: "file_name", value: "common"}
+    identifier_field: "file_name"
     fields:
       - {label: "File Name", name: "file_name", widget: "hidden", default: "common"}
       - label: "Navbar"
@@ -86,6 +88,7 @@ collections:
     delete: false
     slug: "home"
     filter: {field: "file_name", value: "home"}
+    identifier_field: "file_name"
     fields:
       - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
       - label: "Hero Section"
@@ -118,6 +121,7 @@ collections:
     delete: false
     slug: "home"
     filter: {field: "file_name", value: "home"}
+    identifier_field: "file_name"
     fields:
       - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
       - label: "Hero Section"
