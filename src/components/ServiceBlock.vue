@@ -7,9 +7,13 @@
       :class="{ 'service-block__wrapper-list': showIcon }"
     >
       <ServiceBlockItem
-        v-for="service in services"
-        :serviceIndex="service.index"
-        :serviceItem="service.value"
+        v-for="(service, index) in services"
+        :key="index"
+        :serviceIndex="index + 1"
+        :title="service.title"
+        :content="service.content"
+        :duration="service.duration"
+        :price="service.price"
         :showIcon="showIcon"
       />
     </div>
@@ -26,7 +30,6 @@
 
 <script>
 import ServiceBlockItem from "./common/ServiceBlockItem.vue";
-import { SERVICE_ITEMS } from "../constants/commonConstants";
 
 export default {
   name: "ServiceBlock",
@@ -41,10 +44,10 @@ export default {
     },
   },
   components: { ServiceBlockItem },
-  data() {
-    return {
-      services: SERVICE_ITEMS,
-    };
+  computed: {
+    services() {
+      return this.$tm('services.items');
+    },
   },
   methods: {
     handleButtonClick() {

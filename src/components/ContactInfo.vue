@@ -20,56 +20,39 @@
       }}</span>
       <div class="contact-info-block__locations-list">
         <div
-          v-for="location in locations"
+          v-for="(location, index) in locations"
+          :key="index"
           class="contact-info-block__locations-list--item"
         >
-          <span>{{
-            $t(`contact.practiceLocations.${location.value}.name`)
-          }}</span>
-          <span>{{
-            $t(`contact.practiceLocations.${location.value}.street`)
-          }}</span>
-          <span>{{
-            $t(`contact.practiceLocations.${location.value}.city`)
-          }}</span>
-          <span>{{
-            $t(`contact.practiceLocations.${location.value}.email`)
-          }}</span>
+          <span>{{ location.name }}</span>
+          <span>{{ location.street }}</span>
+          <span>{{ location.city }}</span>
+          <span>{{ location.email }}</span>
           <div>
             <a
-              :href="
-                $t(`contact.practiceLocations.${location.value}.instagram`)
-              "
+              :href="location.instagram"
               class="social-link"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i class="fab fa-instagram"></i>
-              {{
-                $t(`contact.practiceLocations.${location.value}.instagramLabel`)
-              }}
+              {{ location.instagramLabel }}
             </a>
           </div>
           <div>
             <a
-              :href="$t(`contact.practiceLocations.${location.value}.facebook`)"
+              :href="location.facebook"
               class="social-link"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i class="fab fa-facebook"></i>
-              {{
-                $t(`contact.practiceLocations.${location.value}.facebookLabel`)
-              }}
+              {{ location.facebookLabel }}
             </a>
           </div>
           <div class="line-separator"></div>
-          <span>{{
-            $t(`contact.practiceLocations.${location.value}.tel`)
-          }}</span>
-          <span v-if="hasFax">{{
-            $t(`contact.practiceLocations.${location.value}.fax`)
-          }}</span>
+          <span>{{ location.tel }}</span>
+          <span v-if="hasFax">{{ location.fax }}</span>
         </div>
       </div>
     </div>
@@ -77,15 +60,17 @@
 </template>
 
 <script>
-import { LOCATIONS_ITEMS } from "../constants/commonConstants";
-
 export default {
   name: "ContactInfoBlock",
   data() {
     return {
-      locations: LOCATIONS_ITEMS,
       hasFax: false,
     };
+  },
+  computed: {
+    locations() {
+      return this.$tm('contact.practiceLocations.locations');
+    },
   },
 };
 </script>

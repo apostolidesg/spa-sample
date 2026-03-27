@@ -11,23 +11,19 @@
           :imageAlt="$t('about.imageAlt')"
           alignment="right"
           :title="$t('about.title')"
-          :description="['about.description']"
+          :description="[$t('about.description')]"
         />
         <ImageTextBlock
           :imageSrc="educationImage"
           :imageAlt="$t('about.education.imageAlt')"
           alignment="left"
           :title="$t('about.education.title')"
-          :description="[
-            'about.education.description0',
-            'about.education.description1',
-            'about.education.description2',
-          ]"
+          :description="$tm('about.education.items')"
           :listDecorations="true"
         />
       </div>
     </div>
-    <SectionSeparator :content="$t('about.FAQ.title')" theme="white" />
+    <SectionSeparator :content="$t('about.faq.title')" theme="white" />
     <div class="faq-section">
       <div class="spa-container">
         <FAQ />

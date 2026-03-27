@@ -4,10 +4,10 @@
       <i class="fa-solid fa-quote-right"></i>
     </div>
     <div class="critics-block-item__content">
-      {{ $t(`services.${criticsItem}.content`) }}
+      {{ content }}
     </div>
     <div class="critics-block-item__name">
-      {{ $t(`services.${criticsItem}.name`) }}
+      {{ name }}
     </div>
   </div>
 </template>
@@ -16,7 +16,11 @@
 export default {
   name: "CriticsBlockItem",
   props: {
-    criticsItem: {
+    name: {
+      type: String,
+      default: "",
+    },
+    content: {
       type: String,
       default: "",
     },

@@ -1,9 +1,9 @@
 <template>
   <div class="faq-container">
     <div class="faq-list">
-      <div v-for="(_, index) in faqItems" :key="index" class="faq-list__item">
+      <div v-for="(faq, index) in faqItems" :key="index" class="faq-list__item">
         <div class="faq-list__item--question" @click="toggleAccordion(index)">
-          {{ $t(`about.FAQ.item-${index}.question`) }}
+          {{ faq.question }}
           <i
             class="fa-solid fa-angle-up faq-list__item--question-icon"
             :class="{ 'is-expanded': isExpandedItem(index) }"
@@ -14,7 +14,7 @@
           class="faq-list__item--answer testimonial"
           @click="toggleAccordion(index)"
         >
-          {{ $t(`about.FAQ.item-${index}.answer`) }}
+          {{ faq.answer }}
         </div>
       </div>
     </div>
@@ -22,16 +22,16 @@
 </template>
 
 <script>
-import { FAQlength } from "../constants/commonConstants";
 export default {
   data() {
     return {
-      isExpanded: false,
       currentIndex: null,
     };
   },
-  created() {
-    this.faqItems = FAQlength;
+  computed: {
+    faqItems() {
+      return this.$tm('about.faq.items');
+    },
   },
   methods: {
     toggleAccordion(index) {

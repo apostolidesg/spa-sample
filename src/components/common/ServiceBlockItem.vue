@@ -11,15 +11,15 @@
     </div>
     <div class="service-block-item__label">
       <div class="service-block-item__label-title">
-        {{ $t(`services.${serviceItem}.title`) }}
+        {{ title }}
       </div>
       <div v-if="showIcon" class="service-block-item__label-content">
-        {{ $t(`services.${serviceItem}.content`) }}
+        {{ content }}
       </div>
     </div>
     <div v-if="showIcon" class="service-block-item__extra-info">
-      <div>{{ $t(`services.${serviceItem}.duration`) }}</div>
-      <!-- <div>{{ $t(`services.${serviceItem}.price`) }}</div> -->
+      <div>{{ duration }}</div>
+      <!-- <div>{{ price }}</div> -->
     </div>
   </div>
 </template>
@@ -32,7 +32,19 @@ export default {
       type: Number,
       default: 1,
     },
-    serviceItem: {
+    title: {
+      type: String,
+      default: "",
+    },
+    content: {
+      type: String,
+      default: "",
+    },
+    duration: {
+      type: String,
+      default: "",
+    },
+    price: {
       type: String,
       default: "",
     },

@@ -27,7 +27,7 @@
         class="image-text-block__content--descr"
         :class="{ bullet: listDecorations }"
       >
-        {{ $t(`${item}`) }}
+        {{ item }}
       </div>
     </div>
   </div>

@@ -1,23 +1,24 @@
 <template>
   <div class="critics-block">
     <CriticsBlockItem
-      v-for="critics in criticss"
-      :criticsItem="critics.value"
+      v-for="(critic, index) in criticss"
+      :key="index"
+      :name="critic.name"
+      :content="critic.content"
     />
   </div>
 </template>
 
 <script>
 import CriticsBlockItem from "./common/CriticsBlockItem.vue";
-import { CRITICS_ITEMS } from "../constants/commonConstants";
 
 export default {
   name: "CriticsBlock",
   components: { CriticsBlockItem },
-  data() {
-    return {
-      criticss: CRITICS_ITEMS,
-    };
+  computed: {
+    criticss() {
+      return this.$tm('services.testimonials.items');
+    },
   },
 };
 </script>
