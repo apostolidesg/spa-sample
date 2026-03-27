@@ -1,0 +1,58 @@
+{
+  "title": "I'm Alexandros Rembelos",
+  "description": "I specialize in Cognitive Behavioral Therapy (CBT) and hold a degree from the University of Crete. I have experience working with adults in individual therapy sessions, as well as supporting vulnerable groups and children on the autism spectrum.I offer both online and in-person sessions, focusing on self-awareness, emotional regulation, and improving quality of life. I believe in building a trust-based therapeutic relationship, grounded in compassion, acceptance, and honesty.",
+  "imageAlt": "Alexandros Rembelos",
+  "hero": {
+    "title": "About us"
+  },
+  "education": {
+    "title": "Education",
+    "imageAlt": "Education Image",
+    "items": [
+      "Psychology – University of Crete, School of Social Sciences.",
+      "Cognitive Behavioral Therapy (CBT) – University of Crete, Department of Psychiatry & Behavioral Sciences.",
+      "School Psychology and Educational Counseling – University of the Aegean."
+    ]
+  },
+  "faq": {
+    "title": "FAQs",
+    "items": [
+      {
+        "question": "Who is Alexandros Rempelos?",
+        "answer": "A psychologist specializing in Cognitive-Behavioral Therapy (CBT), who supports adults, adolescents, and children. They help adults manage anxiety, stress, depressive symptoms, panic attacks, and relationship difficulties, providing practical strategies for better balance and mental well-being.\n \nAt the same time, they work with parents, children on the autism spectrum, and adolescents from vulnerable groups, offering counseling and educational interventions. The approach focuses on the active participation of the individual and the development of self-management skills, so you feel more prepared to face everyday challenges."
+      },
+      {
+        "question": "Where do sessions take place?",
+        "answer": "At his private office in Cholargos (Metonou 71), in Chalkida (Filonos 13) and via online sessions."
+      },
+      {
+        "question": "What services does he offer?",
+        "answer": "Individual psychotherapy (CBT) Parental counseling Educational programs (stress management, skill development, self-improvement)"
+      },
+      {
+        "question": "Which age groups does he work with?",
+        "answer": "Children, adolescents, and adults - both individually and through group seminars."
+      },
+      {
+        "question": "What is Cognitive Behavioral Therapy (CBT)?",
+        "answer": "Cognitive-Behavioral Therapy (CBT) is a modern and scientifically proven method of psychotherapy that helps a person identify and change dysfunctional patterns of thought and behavior.\n \n Through a structured and collaborative process, the client learns to understand how their thoughts affect their feelings and actions, and to adopt more realistic and helpful ways of thinking, thereby improving their mental well-being and daily life.\n \nCBT has been proven particularly effective in managing:\n \n• Anxiety and panic attacks\n • Depressive symptoms\n • Phobias and obsessions\n • Low self-esteem\n • Relationship and communication difficulties\n \nIt is a practical and targeted therapeutic approach that emphasizes the active participation of the individual and the continuous development of self-management skills."
+      },
+      {
+        "question": "Does he have experience with special populations?",
+        "answer": "Yes. He has worked with adults with psychotic, anxiety, and depressive disorders, with individuals facing difficulties in managing stress, and with professional or personal adjustment issues, as well as with children on the autism spectrum, vulnerable adolescent groups, and parents, providing counseling and support in an educational and social context."
+      },
+      {
+        "question": "How can I book an appointment?",
+        "answer": "Via email (alexandrosrempelos@gmail.com) or phone (+30 6974434381) for in-person or online sessions."
+      },
+      {
+        "question": "Does he offer seminars?",
+        "answer": "Yes, online personal development and parenting seminars on topics like stress management and emotional development."
+      },
+      {
+        "question": "In which areas does he practice?",
+        "answer": "Based in Cholargos (Athens) with additional collaborations in Lamia and Crete. Also offers online services."
+      }
+    ]
+  }
+}

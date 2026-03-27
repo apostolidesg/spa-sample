@@ -1,0 +1,19 @@
+{
+  "navbar": {
+    "logo": {
+      "name": "Alexandros Rembelos,",
+      "title": "Psychologist & CBT Therapist"
+    },
+    "routes": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact",
+      "servicesAndContact": "Services & Contact"
+    },
+    "language": "GR"
+  },
+  "footer": {
+    "copyrights": "2025 by Alexandros Rembelos. All Rights Reserved."
+  }
+}

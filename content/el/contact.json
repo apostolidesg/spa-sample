@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "title": "Επικοινωνία"
+  },
+  "info": "Πληροφορίες",
+  "workingHours": {
+    "title": "Ωράριο Λειτουργίας",
+    "weekdays": "Δευτέρα-Παρασκευή: 9πμ έως 9μμ",
+    "saturday": "Σάββατο: 9πμ έως 4μμ",
+    "sunday": "Κυριακή: Κλειστά"
+  },
+  "practiceLocations": {
+    "title": "Τοποθεσίες",
+    "locations": [
+      {
+        "name": "Ιδιωτικό Γραφείο",
+        "street": "Μέτωνος 71, Χολαργός 15561, Αττική",
+        "city": "​Φίλωνος 13, Χαλκίδα 34132, Εύβοια",
+        "email": "alexandrosrempelos@gmail.com",
+        "tel": "Τηλ: +30 697 443 4381",
+        "fax": "Φαξ: 123-456-7890",
+        "instagram": "https://www.instagram.com/alexandros_rempelos",
+        "instagramLabel": "Ακολουθησέ με στο Instagram",
+        "facebook": "https://www.facebook.com/alexandrosrempelosCBT",
+        "facebookLabel": "Ακολουθησέ με στο Facebook"
+      },
+      {
+        "name": "Ιδιωτικό Γραφείο",
+        "street": "Αττική & ​Φίλωνος 13",
+        "city": "34132, Χαλκίδα",
+        "email": "alexandrosrempelos@gmail.com",
+        "tel": "Τηλ: +30 697 443 4381",
+        "fax": "Φαξ: 123-456-7890",
+        "instagram": "https://www.instagram.com/alexandros_rempelos",
+        "instagramLabel": "Ακολουθησέ με στο Instagram",
+        "facebook": "https://www.facebook.com/alexandrosrempelosCBT",
+        "facebookLabel": "Ακολουθησέ με στο Facebook"
+      }
+    ]
+  },
+  "form": {
+    "firstName": "Όνομα",
+    "lastName": "Επώνυμο",
+    "email": "Email",
+    "phone": "Τηλέφωνο",
+    "address": "Διεύθυνση",
+    "cta": "Υποβολή"
+  }
+}

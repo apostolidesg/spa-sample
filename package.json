@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cms-proxy": "npx decap-server"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
+    "decap-server": "^3.6.0",
     "sass-embedded": "^1.85.1",
     "vite": "^6.2.0"
   }

@@ -1,0 +1,50 @@
+{
+  "title": "How can we help?",
+  "hero": {
+    "title": "Our Services"
+  },
+  "readMore": "Read More",
+  "items": [
+    {
+      "title": "Individual CBT Therapy",
+      "content": "Therapeutic support based on Cognitive Behavioral Therapy for adults and adolescents.",
+      "duration": "60 min",
+      "price": "€20"
+    },
+    {
+      "title": "Parenting Counseling",
+      "content": "Guidance and skills enhancement for parents to support positive upbringing and empathetic communication.",
+      "duration": "60 min",
+      "price": "€20"
+    },
+    {
+      "title": "Support for Vulnerable Groups",
+      "content": "Targeted interventions for children on the autism spectrum and other vulnerable social groups.",
+      "duration": "60 min",
+      "price": "€20"
+    },
+    {
+      "title": "Online Psychotherapy Sessions",
+      "content": "Individual psychotherapy sessions online or in person, with emphasis on accessibility and flexibility.",
+      "duration": "60 min",
+      "price": "€20"
+    }
+  ],
+  "testimonials": {
+    "title": "Satisfied Customers",
+    "items": [
+      {
+        "name": "Dave Reddington",
+        "content": "'I am a testimonial. Edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.'"
+      },
+      {
+        "name": "Amelia Banks",
+        "content": "'I am a testimonial. Edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.'"
+      },
+      {
+        "name": "Kenny Stutes",
+        "content": "'I am a testimonial. Edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.'"
+      }
+    ]
+  }
+}
