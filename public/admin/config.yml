@@ -8,242 +8,137 @@ local_backend: true
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
 
-locale: "en"
-i18n:
-  structure: single_file
-  locales: [en, el]
-  default_locale: en
-
 collections:
-  - name: "common"
-    label: "Common (Navbar & Footer)"
-    i18n: true
-    files:
-      - name: "common"
-        label: "Common Content"
-        file: "content/{{locale}}/common.json"
-        i18n: true
+  - name: "common_en"
+    label: "Common (EN) - Navbar & Footer"
+    folder: "content/en"
+    create: false
+    delete: false
+    slug: "common"
+    filter: {field: "file_name", value: "common"}
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "common"}
+      - label: "Navbar"
+        name: "navbar"
+        widget: "object"
         fields:
-          - label: "Navbar"
-            name: "navbar"
+          - label: "Logo"
+            name: "logo"
             widget: "object"
-            i18n: true
             fields:
-              - label: "Logo"
-                name: "logo"
-                widget: "object"
-                i18n: true
-                fields:
-                  - {label: "Name", name: "name", widget: "string", i18n: true}
-                  - {label: "Title", name: "title", widget: "string", i18n: true}
-              - label: "Routes"
-                name: "routes"
-                widget: "object"
-                i18n: true
-                fields:
-                  - {label: "Home", name: "home", widget: "string", i18n: true}
-                  - {label: "About", name: "about", widget: "string", i18n: true}
-                  - {label: "Services", name: "services", widget: "string", i18n: true}
-                  - {label: "Contact", name: "contact", widget: "string", i18n: true}
-                  - {label: "Services & Contact", name: "servicesAndContact", widget: "string", i18n: true}
-              - {label: "Language Toggle", name: "language", widget: "string", i18n: true}
-          - label: "Footer"
-            name: "footer"
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+          - label: "Routes"
+            name: "routes"
             widget: "object"
-            i18n: true
             fields:
-              - {label: "Copyright Text", name: "copyrights", widget: "string", i18n: true}
+              - {label: "Home", name: "home", widget: "string"}
+              - {label: "About", name: "about", widget: "string"}
+              - {label: "Services", name: "services", widget: "string"}
+              - {label: "Contact", name: "contact", widget: "string"}
+              - {label: "Services & Contact", name: "servicesAndContact", widget: "string"}
+          - {label: "Language Toggle", name: "language", widget: "string"}
+      - label: "Footer"
+        name: "footer"
+        widget: "object"
+        fields:
+          - {label: "Copyright Text", name: "copyrights", widget: "string"}
 
-  - name: "home"
-    label: "Home Page"
-    i18n: true
-    files:
-      - name: "home"
-        label: "Home Content"
-        file: "content/{{locale}}/home.json"
-        i18n: true
+  - name: "common_el"
+    label: "Common (EL) - Navbar & Footer"
+    folder: "content/el"
+    create: false
+    delete: false
+    slug: "common"
+    filter: {field: "file_name", value: "common"}
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "common"}
+      - label: "Navbar"
+        name: "navbar"
+        widget: "object"
         fields:
-          - label: "Hero Section"
-            name: "hero"
+          - label: "Logo"
+            name: "logo"
             widget: "object"
-            i18n: true
             fields:
-              - {label: "Name", name: "name", widget: "string", i18n: true}
-              - {label: "Subtitle", name: "subtitle", widget: "string", i18n: true}
-              - {label: "Button Text", name: "buttonText", widget: "string", i18n: true}
-          - label: "About Section"
-            name: "about"
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+          - label: "Routes"
+            name: "routes"
             widget: "object"
-            i18n: true
             fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-          - label: "Services Section"
-            name: "services"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-          - label: "Contact Section"
-            name: "contact"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
+              - {label: "Home", name: "home", widget: "string"}
+              - {label: "About", name: "about", widget: "string"}
+              - {label: "Services", name: "services", widget: "string"}
+              - {label: "Contact", name: "contact", widget: "string"}
+              - {label: "Services & Contact", name: "servicesAndContact", widget: "string"}
+          - {label: "Language Toggle", name: "language", widget: "string"}
+      - label: "Footer"
+        name: "footer"
+        widget: "object"
+        fields:
+          - {label: "Copyright Text", name: "copyrights", widget: "string"}
 
-  - name: "about"
-    label: "About Page"
-    i18n: true
-    files:
-      - name: "about"
-        label: "About Content"
-        file: "content/{{locale}}/about.json"
-        i18n: true
+  - name: "home_en"
+    label: "Home Page (EN)"
+    folder: "content/en"
+    create: false
+    delete: false
+    slug: "home"
+    filter: {field: "file_name", value: "home"}
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
+      - label: "Hero Section"
+        name: "hero"
+        widget: "object"
         fields:
-          - {label: "Title", name: "title", widget: "string", i18n: true}
-          - {label: "Description", name: "description", widget: "text", i18n: true}
-          - {label: "Image Alt Text", name: "imageAlt", widget: "string", i18n: true}
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-          - label: "Education"
-            name: "education"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-              - {label: "Image Alt", name: "imageAlt", widget: "string", i18n: true}
-              - label: "Education Items"
-                name: "items"
-                widget: "list"
-                i18n: true
-                field: {label: "Item", name: "item", widget: "text", i18n: true}
-          - label: "FAQ"
-            name: "faq"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-              - label: "FAQ Items"
-                name: "items"
-                widget: "list"
-                i18n: true
-                fields:
-                  - {label: "Question", name: "question", widget: "string", i18n: true}
-                  - {label: "Answer", name: "answer", widget: "text", i18n: true}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Button Text", name: "buttonText", widget: "string"}
+      - label: "About Section"
+        name: "about"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+      - label: "Services Section"
+        name: "services"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+      - label: "Contact Section"
+        name: "contact"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
 
-  - name: "services"
-    label: "Services Page"
-    i18n: true
-    files:
-      - name: "services"
-        label: "Services Content"
-        file: "content/{{locale}}/services.json"
-        i18n: true
+  - name: "home_el"
+    label: "Home Page (EL)"
+    folder: "content/el"
+    create: false
+    delete: false
+    slug: "home"
+    filter: {field: "file_name", value: "home"}
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
+      - label: "Hero Section"
+        name: "hero"
+        widget: "object"
         fields:
-          - {label: "Title", name: "title", widget: "string", i18n: true}
-          - {label: "Read More Text", name: "readMore", widget: "string", i18n: true}
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-          - label: "Service Items"
-            name: "items"
-            widget: "list"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-              - {label: "Content", name: "content", widget: "text", i18n: true}
-              - {label: "Duration", name: "duration", widget: "string", i18n: true}
-              - {label: "Price", name: "price", widget: "string", i18n: true}
-          - label: "Testimonials"
-            name: "testimonials"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-              - label: "Testimonial Items"
-                name: "items"
-                widget: "list"
-                i18n: true
-                fields:
-                  - {label: "Name", name: "name", widget: "string", i18n: true}
-                  - {label: "Content", name: "content", widget: "text", i18n: true}
-
-  - name: "servicesContact"
-    label: "Services & Contact Page"
-    i18n: true
-    files:
-      - name: "servicesContact"
-        label: "Services & Contact Content"
-        file: "content/{{locale}}/servicesContact.json"
-        i18n: true
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Button Text", name: "buttonText", widget: "string"}
+      - label: "About Section"
+        name: "about"
+        widget: "object"
         fields:
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-
-  - name: "contact"
-    label: "Contact Page"
-    i18n: true
-    files:
-      - name: "contact"
-        label: "Contact Content"
-        file: "content/{{locale}}/contact.json"
-        i18n: true
+          - {label: "Title", name: "title", widget: "string"}
+      - label: "Services Section"
+        name: "services"
+        widget: "object"
         fields:
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-          - {label: "Info Label", name: "info", widget: "string", i18n: true}
-          - label: "Working Hours"
-            name: "workingHours"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-              - {label: "Weekdays", name: "weekdays", widget: "string", i18n: true}
-              - {label: "Saturday", name: "saturday", widget: "string", i18n: true}
-              - {label: "Sunday", name: "sunday", widget: "string", i18n: true}
-          - label: "Practice Locations"
-            name: "practiceLocations"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "Title", name: "title", widget: "string", i18n: true}
-              - label: "Locations"
-                name: "locations"
-                widget: "list"
-                i18n: true
-                fields:
-                  - {label: "Name", name: "name", widget: "string", i18n: true}
-                  - {label: "Street", name: "street", widget: "string", i18n: true}
-                  - {label: "City", name: "city", widget: "string", i18n: true}
-                  - {label: "Email", name: "email", widget: "string", i18n: true}
-                  - {label: "Phone", name: "tel", widget: "string", i18n: true}
-                  - {label: "Fax", name: "fax", widget: "string", i18n: true}
-                  - {label: "Instagram URL", name: "instagram", widget: "string", i18n: true}
-                  - {label: "Instagram Label", name: "instagramLabel", widget: "string", i18n: true}
-                  - {label: "Facebook URL", name: "facebook", widget: "string", i18n: true}
-                  - {label: "Facebook Label", name: "facebookLabel", widget: "string", i18n: true}
-          - label: "Contact Form"
-            name: "form"
-            widget: "object"
-            i18n: true
-            fields:
-              - {label: "First Name", name: "firstName", widget: "string", i18n: true}
-              - {label: "Last Name", name: "lastName", widget: "string", i18n: true}
-              - {label: "Email", name: "email", widget: "string", i18n: true}
-              - {label: "Phone", name: "phone", widget: "string", i18n: true}
-              - {label: "Address", name: "address", widget: "string", i18n: true}
-              - {label: "Submit Button", name: "cta", widget: "string", i18n: true}
+          - {label: "Title", name: "title", widget: "string"}
+      - label: "Contact Section"
+        name: "contact"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
