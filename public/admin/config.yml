@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: apostolidesg/spa-sample
-  branch: develop
+  branch: main
 
 local_backend: true
 
