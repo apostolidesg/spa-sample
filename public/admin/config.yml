@@ -10,7 +10,7 @@ public_folder: "/assets/images"
 
 locale: "en"
 i18n:
-  structure: multiple_folders
+  structure: single_file
   locales: [en, el]
   default_locale: en
 
