@@ -47,5 +47,8 @@
         "content": "'I am a testimonial. Edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.'"
       }
     ]
+  },
+  "servicesContactHero": {
+    "title": "Services & Contact"
   }
 }
