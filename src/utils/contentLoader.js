@@ -8,9 +8,11 @@ export async function loadLocaleContent(locale) {
 
     // Load each file that matches our locale
     for (const path in modules) {
-      if (path.includes(`/content/${locale}/`)) {
+      // path format: /content/{pageName}/{locale}/{pageName}.json
+      const parts = path.split('/');
+      if (parts[3] === locale) {
         const module = await modules[path]();
-        const fileName = path.split('/').pop().replace('.json', '');
+        const fileName = parts[2];
 
         // Merge the content, removing the file_name field
         const data = { ...module.default };
