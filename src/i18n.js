@@ -32,30 +32,20 @@ async function loadAllContent() {
   }
 }
 
-// Transform content from file-based structure to flat structure
 function transformContent(content) {
   const transformed = {};
 
-  // Merge all files into one flat structure
   for (const [file, data] of Object.entries(content)) {
     if (file === 'common') {
-      // Common content: navbar, footer
       transformed.navbar = data.navbar;
-      transformed.footer = data.footer;
     } else if (file === 'home') {
-      // Home content
       transformed.home = data;
     } else if (file === 'about') {
-      // About content
       transformed.about = data;
     } else if (file === 'services') {
-      // Services content
       transformed.services = data;
-    } else if (file === 'servicesContact') {
-      // Services & Contact content
-      transformed.servicesAndContact = data;
+      transformed.servicesAndContact = { hero: data.servicesContactHero };
     } else if (file === 'contact') {
-      // Contact content
       transformed.contact = data;
     }
   }
