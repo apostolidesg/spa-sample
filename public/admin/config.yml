@@ -11,186 +11,205 @@ i18n:
   default_locale: el
 
 collections:
-  - name: "site"
-    label: "Site"
+  - name: "common"
+    label: "Menu"
+    folder: "content/common"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
     i18n: true
-    files:
-      - name: "menu"
-        label: "Menu"
-        file: "content/common/common.json"
-        i18n: true
+    identifier_field: file_name
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "common", i18n: duplicate}
+      - label: "Navbar"
+        name: "navbar"
+        widget: "object"
         fields:
-          - {label: "File Name", name: "file_name", widget: "hidden", default: "common", i18n: duplicate}
-          - label: "Navbar"
-            name: "navbar"
-            widget: "object"
-            fields:
-              - label: "Logo"
-                name: "logo"
-                widget: "object"
-                fields:
-                  - {label: "Name", name: "name", widget: "string"}
-                  - {label: "Title", name: "title", widget: "string"}
-              - label: "Routes"
-                name: "routes"
-                widget: "object"
-                fields:
-                  - {label: "Home", name: "home", widget: "string"}
-                  - {label: "About", name: "about", widget: "string"}
-                  - {label: "Services", name: "services", widget: "string"}
-                  - {label: "Contact", name: "contact", widget: "string"}
-                  - {label: "Services & Contact", name: "servicesAndContact", widget: "string"}
-              - {label: "Language Toggle", name: "language", widget: "string"}
-
-      - name: "home"
-        label: "Home"
-        file: "content/home/home.json"
-        i18n: true
-        fields:
-          - {label: "File Name", name: "file_name", widget: "hidden", default: "home", i18n: duplicate}
-          - label: "Hero Section"
-            name: "hero"
+          - label: "Logo"
+            name: "logo"
             widget: "object"
             fields:
               - {label: "Name", name: "name", widget: "string"}
-              - {label: "Subtitle", name: "subtitle", widget: "string"}
-              - {label: "Button Text", name: "buttonText", widget: "string"}
-          - label: "About Section"
-            name: "about"
+              - {label: "Title", name: "title", widget: "string"}
+          - label: "Routes"
+            name: "routes"
             widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-          - label: "Services Section"
-            name: "services"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
-          - label: "Contact Section"
-            name: "contact"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Home", name: "home", widget: "string"}
+              - {label: "About", name: "about", widget: "string"}
+              - {label: "Services", name: "services", widget: "string"}
+              - {label: "Contact", name: "contact", widget: "string"}
+              - {label: "Services & Contact", name: "servicesAndContact", widget: "string"}
+          - {label: "Language Toggle", name: "language", widget: "string"}
 
-      - name: "about"
-        label: "About"
-        file: "content/about/about.json"
-        i18n: true
+  - name: "home"
+    label: "Home Page"
+    folder: "content/home"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
+    i18n: true
+    identifier_field: file_name
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "home", i18n: duplicate}
+      - label: "Hero Section"
+        name: "hero"
+        widget: "object"
         fields:
-          - {label: "File Name", name: "file_name", widget: "hidden", default: "about", i18n: duplicate}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Button Text", name: "buttonText", widget: "string"}
+      - label: "About Section"
+        name: "about"
+        widget: "object"
+        fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
-          - {label: "Image Alt Text", name: "imageAlt", widget: "string"}
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
-          - label: "Education"
-            name: "education"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Image Alt", name: "imageAlt", widget: "string"}
-              - label: "Education Items"
-                name: "items"
-                widget: "list"
-                field: {label: "Item", name: "item", widget: "text"}
-          - label: "FAQ"
-            name: "faq"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - label: "FAQ Items"
-                name: "items"
-                widget: "list"
-                fields:
-                  - {label: "Question", name: "question", widget: "string"}
-                  - {label: "Answer", name: "answer", widget: "text"}
+      - label: "Services Section"
+        name: "services"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+      - label: "Contact Section"
+        name: "contact"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
 
-      - name: "services"
-        label: "Services"
-        file: "content/services/services.json"
-        i18n: true
+  - name: "about"
+    label: "About Page"
+    folder: "content/about"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
+    i18n: true
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "about", i18n: duplicate}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image Alt Text", name: "imageAlt", widget: "string"}
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
         fields:
-          - {label: "File Name", name: "file_name", widget: "hidden", default: "services", i18n: duplicate}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Read More Text", name: "readMore", widget: "string"}
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
-          - label: "Service Items"
+      - label: "Education"
+        name: "education"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image Alt", name: "imageAlt", widget: "string"}
+          - label: "Education Items"
+            name: "items"
+            widget: "list"
+            field: {label: "Item", name: "item", widget: "text"}
+      - label: "FAQ"
+        name: "faq"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "FAQ Items"
             name: "items"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Content", name: "content", widget: "text"}
-              - {label: "Duration", name: "duration", widget: "string"}
-              - {label: "Price", name: "price", widget: "string"}
-          - label: "Testimonials"
-            name: "testimonials"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - label: "Testimonial Items"
-                name: "items"
-                widget: "list"
-                fields:
-                  - {label: "Name", name: "name", widget: "string"}
-                  - {label: "Content", name: "content", widget: "text"}
-          - label: "Services & Contact Hero"
-            name: "servicesContactHero"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Answer", name: "answer", widget: "text"}
 
-      - name: "contact"
-        label: "Contact"
-        file: "content/contact/contact.json"
-        i18n: true
+  - name: "services"
+    label: "Services Page"
+    folder: "content/services"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
+    i18n: true
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "services", i18n: duplicate}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Read More Text", name: "readMore", widget: "string"}
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
         fields:
-          - {label: "File Name", name: "file_name", widget: "hidden", default: "contact", i18n: duplicate}
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
+          - {label: "Title", name: "title", widget: "string"}
+      - label: "Service Items"
+        name: "items"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "content", widget: "text"}
+          - {label: "Duration", name: "duration", widget: "string"}
+          - {label: "Price", name: "price", widget: "string"}
+      - label: "Testimonials"
+        name: "testimonials"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Testimonial Items"
+            name: "items"
+            widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-          - {label: "Info Label", name: "info", widget: "string"}
-          - label: "Working Hours"
-            name: "workingHours"
-            widget: "object"
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Content", name: "content", widget: "text"}
+      - label: "Services & Contact Hero"
+        name: "servicesContactHero"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+
+  - name: "contact"
+    label: "Contact Page"
+    folder: "content/contact"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
+    i18n: true
+    identifier_field: file_name
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "contact", i18n: duplicate}
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+      - {label: "Info Label", name: "info", widget: "string"}
+      - label: "Working Hours"
+        name: "workingHours"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Weekdays", name: "weekdays", widget: "string"}
+          - {label: "Saturday", name: "saturday", widget: "string"}
+          - {label: "Sunday", name: "sunday", widget: "string"}
+      - label: "Practice Locations"
+        name: "practiceLocations"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Locations"
+            name: "locations"
+            widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Weekdays", name: "weekdays", widget: "string"}
-              - {label: "Saturday", name: "saturday", widget: "string"}
-              - {label: "Sunday", name: "sunday", widget: "string"}
-          - label: "Practice Locations"
-            name: "practiceLocations"
-            widget: "object"
-            fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - label: "Locations"
-                name: "locations"
-                widget: "list"
-                fields:
-                  - {label: "Name", name: "name", widget: "string"}
-                  - {label: "Street", name: "street", widget: "string"}
-                  - {label: "City", name: "city", widget: "string"}
-                  - {label: "Email", name: "email", widget: "string"}
-                  - {label: "Phone", name: "tel", widget: "string"}
-                  - {label: "Fax", name: "fax", widget: "string"}
-                  - {label: "Instagram URL", name: "instagram", widget: "string"}
-                  - {label: "Instagram Label", name: "instagramLabel", widget: "string"}
-                  - {label: "Facebook URL", name: "facebook", widget: "string"}
-                  - {label: "Facebook Label", name: "facebookLabel", widget: "string"}
-          - label: "Contact Form"
-            name: "form"
-            widget: "object"
-            fields:
-              - {label: "First Name", name: "firstName", widget: "string"}
-              - {label: "Last Name", name: "lastName", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Street", name: "street", widget: "string"}
+              - {label: "City", name: "city", widget: "string"}
               - {label: "Email", name: "email", widget: "string"}
-              - {label: "Phone", name: "phone", widget: "string"}
-              - {label: "Address", name: "address", widget: "string"}
-              - {label: "Submit Button", name: "cta", widget: "string"}
+              - {label: "Phone", name: "tel", widget: "string"}
+              - {label: "Fax", name: "fax", widget: "string"}
+              - {label: "Instagram URL", name: "instagram", widget: "string"}
+              - {label: "Instagram Label", name: "instagramLabel", widget: "string"}
+              - {label: "Facebook URL", name: "facebook", widget: "string"}
+              - {label: "Facebook Label", name: "facebookLabel", widget: "string"}
+      - label: "Contact Form"
+        name: "form"
+        widget: "object"
+        fields:
+          - {label: "First Name", name: "firstName", widget: "string"}
+          - {label: "Last Name", name: "lastName", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Address", name: "address", widget: "string"}
+          - {label: "Submit Button", name: "cta", widget: "string"}
