@@ -1,12 +1,9 @@
 backend:
-  name: github
-  repo: apostolidesg/spa-sample
+  name: git-gateway
   branch: main
 
-local_backend: true
-
-media_folder: "public/assets/images"
-public_folder: "/assets/images"
+media_folder: "public/images"
+public_folder: "/images"
 
 collections:
   - name: "common_en"
