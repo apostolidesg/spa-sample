@@ -11,6 +11,18 @@ i18n:
   default_locale: el
 
 collections:
+  - name: "test"
+    label: "TEST"
+    folder: "content/test"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
+    i18n: true
+    identifier_field: title
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+
   - name: "common"
     label: "Menu"
     folder: "content/common"
