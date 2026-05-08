@@ -70,67 +70,53 @@ collections:
 
   - name: "home-el"
     label: "Home Page (GR)"
-    folder: "content/home/el"
-    create: false
-    delete: false
-    extension: "json"
-    format: "json"
-    identifier_field: file_name
-    fields:
-      - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
-      - label: "Hero Section"
-        name: "hero"
-        widget: "object"
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "content/home/el/hero.json"
         fields:
           - {label: "Name", name: "name", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
           - {label: "Button Text", name: "buttonText", widget: "string"}
-      - label: "About Section"
-        name: "about"
-        widget: "object"
+      - name: "about-section"
+        label: "About Section"
+        file: "content/home/el/about.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-      - label: "Services Section"
-        name: "services"
-        widget: "object"
+      - name: "services-section"
+        label: "Services Section"
+        file: "content/home/el/services.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-      - label: "Contact Section"
-        name: "contact"
-        widget: "object"
+      - name: "contact-section"
+        label: "Contact Section"
+        file: "content/home/el/contact.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
 
   - name: "home-en"
     label: "Home Page (EN)"
-    folder: "content/home/en"
-    create: false
-    delete: false
-    extension: "json"
-    format: "json"
-    identifier_field: file_name
-    fields:
-      - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
-      - label: "Hero Section"
-        name: "hero"
-        widget: "object"
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "content/home/en/hero.json"
         fields:
           - {label: "Name", name: "name", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
           - {label: "Button Text", name: "buttonText", widget: "string"}
-      - label: "About Section"
-        name: "about"
-        widget: "object"
+      - name: "about-section"
+        label: "About Section"
+        file: "content/home/en/about.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-      - label: "Services Section"
-        name: "services"
-        widget: "object"
+      - name: "services-section"
+        label: "Services Section"
+        file: "content/home/en/services.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-      - label: "Contact Section"
-        name: "contact"
-        widget: "object"
+      - name: "contact-section"
+        label: "Contact Section"
+        file: "content/home/en/contact.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
 
