@@ -5,24 +5,7 @@ backend:
 media_folder: "public/images"
 public_folder: "/images"
 
-i18n:
-  structure: multiple_folders
-  locales: [en, el]
-  default_locale: el
-
 collections:
-  - name: "test"
-    label: "TEST"
-    folder: "content/test"
-    create: false
-    delete: false
-    extension: "json"
-    format: "json"
-    i18n: true
-    identifier_field: title
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-
   - name: "common"
     label: "Menu"
     folder: "content/common"
@@ -30,10 +13,9 @@ collections:
     delete: false
     extension: "json"
     format: "json"
-    i18n: true
     identifier_field: file_name
     fields:
-      - {label: "File Name", name: "file_name", widget: "hidden", default: "common", i18n: duplicate}
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "common"}
       - label: "Navbar"
         name: "navbar"
         widget: "object"
@@ -62,10 +44,9 @@ collections:
     delete: false
     extension: "json"
     format: "json"
-    i18n: true
     identifier_field: file_name
     fields:
-      - {label: "File Name", name: "file_name", widget: "hidden", default: "home", i18n: duplicate}
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
       - label: "Hero Section"
         name: "hero"
         widget: "object"
@@ -96,9 +77,8 @@ collections:
     delete: false
     extension: "json"
     format: "json"
-    i18n: true
     fields:
-      - {label: "File Name", name: "file_name", widget: "hidden", default: "about", i18n: duplicate}
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "about"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image Alt Text", name: "imageAlt", widget: "string"}
@@ -136,9 +116,8 @@ collections:
     delete: false
     extension: "json"
     format: "json"
-    i18n: true
     fields:
-      - {label: "File Name", name: "file_name", widget: "hidden", default: "services", i18n: duplicate}
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "services"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Read More Text", name: "readMore", widget: "string"}
       - label: "Hero"
@@ -178,10 +157,9 @@ collections:
     delete: false
     extension: "json"
     format: "json"
-    i18n: true
     identifier_field: file_name
     fields:
-      - {label: "File Name", name: "file_name", widget: "hidden", default: "contact", i18n: duplicate}
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "contact"}
       - label: "Hero"
         name: "hero"
         widget: "object"
