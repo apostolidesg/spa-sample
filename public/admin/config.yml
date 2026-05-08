@@ -6,9 +6,9 @@ media_folder: "public/images"
 public_folder: "/images"
 
 collections:
-  - name: "common"
-    label: "Menu"
-    folder: "content/common"
+  - name: "common-el"
+    label: "Menu (GR)"
+    folder: "content/common/el"
     create: false
     delete: false
     extension: "json"
@@ -37,9 +37,40 @@ collections:
               - {label: "Services & Contact", name: "servicesAndContact", widget: "string"}
           - {label: "Language Toggle", name: "language", widget: "string"}
 
-  - name: "home"
-    label: "Home Page"
-    folder: "content/home"
+  - name: "common-en"
+    label: "Menu (EN)"
+    folder: "content/common/en"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
+    identifier_field: file_name
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "common"}
+      - label: "Navbar"
+        name: "navbar"
+        widget: "object"
+        fields:
+          - label: "Logo"
+            name: "logo"
+            widget: "object"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+          - label: "Routes"
+            name: "routes"
+            widget: "object"
+            fields:
+              - {label: "Home", name: "home", widget: "string"}
+              - {label: "About", name: "about", widget: "string"}
+              - {label: "Services", name: "services", widget: "string"}
+              - {label: "Contact", name: "contact", widget: "string"}
+              - {label: "Services & Contact", name: "servicesAndContact", widget: "string"}
+          - {label: "Language Toggle", name: "language", widget: "string"}
+
+  - name: "home-el"
+    label: "Home Page (GR)"
+    folder: "content/home/el"
     create: false
     delete: false
     extension: "json"
@@ -70,9 +101,42 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
 
-  - name: "about"
-    label: "About Page"
-    folder: "content/about"
+  - name: "home-en"
+    label: "Home Page (EN)"
+    folder: "content/home/en"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
+    identifier_field: file_name
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
+      - label: "Hero Section"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Button Text", name: "buttonText", widget: "string"}
+      - label: "About Section"
+        name: "about"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+      - label: "Services Section"
+        name: "services"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+      - label: "Contact Section"
+        name: "contact"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+
+  - name: "about-el"
+    label: "About Page (GR)"
+    folder: "content/about/el"
     create: false
     delete: false
     extension: "json"
@@ -109,9 +173,48 @@ collections:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "text"}
 
-  - name: "services"
-    label: "Services Page"
-    folder: "content/services"
+  - name: "about-en"
+    label: "About Page (EN)"
+    folder: "content/about/en"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "about"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image Alt Text", name: "imageAlt", widget: "string"}
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+      - label: "Education"
+        name: "education"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image Alt", name: "imageAlt", widget: "string"}
+          - label: "Education Items"
+            name: "items"
+            widget: "list"
+            field: {label: "Item", name: "item", widget: "text"}
+      - label: "FAQ"
+        name: "faq"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "FAQ Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Answer", name: "answer", widget: "text"}
+
+  - name: "services-el"
+    label: "Services Page (GR)"
+    folder: "content/services/el"
     create: false
     delete: false
     extension: "json"
@@ -150,9 +253,104 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
 
-  - name: "contact"
-    label: "Contact Page"
-    folder: "content/contact"
+  - name: "services-en"
+    label: "Services Page (EN)"
+    folder: "content/services/en"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "services"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Read More Text", name: "readMore", widget: "string"}
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+      - label: "Service Items"
+        name: "items"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "content", widget: "text"}
+          - {label: "Duration", name: "duration", widget: "string"}
+          - {label: "Price", name: "price", widget: "string"}
+      - label: "Testimonials"
+        name: "testimonials"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Testimonial Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Content", name: "content", widget: "text"}
+      - label: "Services & Contact Hero"
+        name: "servicesContactHero"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+
+  - name: "contact-el"
+    label: "Contact Page (GR)"
+    folder: "content/contact/el"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
+    identifier_field: file_name
+    fields:
+      - {label: "File Name", name: "file_name", widget: "hidden", default: "contact"}
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+      - {label: "Info Label", name: "info", widget: "string"}
+      - label: "Working Hours"
+        name: "workingHours"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Weekdays", name: "weekdays", widget: "string"}
+          - {label: "Saturday", name: "saturday", widget: "string"}
+          - {label: "Sunday", name: "sunday", widget: "string"}
+      - label: "Practice Locations"
+        name: "practiceLocations"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Locations"
+            name: "locations"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Street", name: "street", widget: "string"}
+              - {label: "City", name: "city", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Phone", name: "tel", widget: "string"}
+              - {label: "Fax", name: "fax", widget: "string"}
+              - {label: "Instagram URL", name: "instagram", widget: "string"}
+              - {label: "Instagram Label", name: "instagramLabel", widget: "string"}
+              - {label: "Facebook URL", name: "facebook", widget: "string"}
+              - {label: "Facebook Label", name: "facebookLabel", widget: "string"}
+      - label: "Contact Form"
+        name: "form"
+        widget: "object"
+        fields:
+          - {label: "First Name", name: "firstName", widget: "string"}
+          - {label: "Last Name", name: "lastName", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Address", name: "address", widget: "string"}
+          - {label: "Submit Button", name: "cta", widget: "string"}
+
+  - name: "contact-en"
+    label: "Contact Page (EN)"
+    folder: "content/contact/en"
     create: false
     delete: false
     extension: "json"
