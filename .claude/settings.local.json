@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Remove-Item -Recurse -Force \"c:\\\\Users\\\\papia\\\\GitHub\\\\spa-sample\\\\content\\\\en\\\\test\")",
+      "Bash(Remove-Item -Recurse -Force \"c:\\\\Users\\\\papia\\\\GitHub\\\\spa-sample\\\\content\\\\el\\\\test\")"
+    ]
+  }
+}

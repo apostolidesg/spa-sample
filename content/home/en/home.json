@@ -1,0 +1,17 @@
+{
+  "file_name": "home",
+  "hero": {
+    "name": "Alexandros Rembelos",
+    "subtitle": "Psychologist & CBT Therapist",
+    "buttonText": "Get Started"
+  },
+  "about": {
+    "title": "About"
+  },
+  "services": {
+    "title": "Services"
+  },
+  "contact": {
+    "title": "Contact"
+  }
+}

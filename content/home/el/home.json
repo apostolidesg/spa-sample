@@ -1,0 +1,17 @@
+{
+  "file_name": "home",
+  "hero": {
+    "name": "Αλέξανδρος Ρέμπελος",
+    "subtitle": "Ψυχολόγος & CBT Θεραπευτής",
+    "buttonText": "Ξεκινήστε"
+  },
+  "about": {
+    "title": "Σχετικά"
+  },
+  "services": {
+    "title": "Υπηρεσίες"
+  },
+  "contact": {
+    "title": "Επικοινωνία"
+  }
+}
