@@ -9,7 +9,7 @@
         <ServiceBlock :showIcon="true" />
       </div>
     </div>
-    <SectionSeparator :content="$t('home.contact.title')" theme="dark-green" />
+    <SectionSeparator :content="$t('home.contact.title')" theme="light-green" />
     <div class="form-section">
       <div class="spa-container">
         <ContactUs />
