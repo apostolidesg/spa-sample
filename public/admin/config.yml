@@ -7,7 +7,7 @@ public_folder: "/images"
 
 collections:
   - name: "common-el"
-    label: "Menu (GR)"
+    label: "Μενού (ΕΛ)"
     folder: "content/common/el"
     create: false
     delete: false
@@ -16,26 +16,26 @@ collections:
     identifier_field: file_name
     fields:
       - {label: "File Name", name: "file_name", widget: "hidden", default: "common"}
-      - label: "Navbar"
+      - label: "Πλοήγηση"
         name: "navbar"
         widget: "object"
         fields:
-          - label: "Logo"
+          - label: "Λογότυπο"
             name: "logo"
             widget: "object"
             fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Title", name: "title", widget: "string"}
-          - label: "Routes"
+              - {label: "Όνομα", name: "name", widget: "string"}
+              - {label: "Τίτλος", name: "title", widget: "string"}
+          - label: "Σύνδεσμοι"
             name: "routes"
             widget: "object"
             fields:
-              - {label: "Home", name: "home", widget: "string"}
-              - {label: "About", name: "about", widget: "string"}
-              - {label: "Services", name: "services", widget: "string"}
-              - {label: "Contact", name: "contact", widget: "string"}
-              - {label: "Services & Contact", name: "servicesAndContact", widget: "string"}
-          - {label: "Language Toggle", name: "language", widget: "string"}
+              - {label: "Αρχική", name: "home", widget: "string"}
+              - {label: "Σχετικά", name: "about", widget: "string"}
+              - {label: "Υπηρεσίες", name: "services", widget: "string"}
+              - {label: "Επικοινωνία", name: "contact", widget: "string"}
+              - {label: "Υπηρεσίες & Επικοινωνία", name: "servicesAndContact", widget: "string"}
+          - {label: "Εναλλαγή Γλώσσας", name: "language", widget: "string"}
 
   - name: "common-en"
     label: "Menu (EN)"
@@ -69,7 +69,7 @@ collections:
           - {label: "Language Toggle", name: "language", widget: "string"}
 
   - name: "home-el"
-    label: "Home Page (GR)"
+    label: "Αρχική Σελίδα (ΕΛ)"
     folder: "content/home/el"
     create: false
     delete: false
@@ -78,28 +78,28 @@ collections:
     identifier_field: file_name
     fields:
       - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
-      - label: "Hero Section"
+      - label: "Ενότητα Hero"
         name: "hero"
         widget: "object"
         fields:
-          - {label: "Name", name: "name", widget: "string"}
-          - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Button Text", name: "buttonText", widget: "string"}
-      - label: "About Section"
+          - {label: "Όνομα", name: "name", widget: "string"}
+          - {label: "Υπότιτλος", name: "subtitle", widget: "string"}
+          - {label: "Κείμενο Κουμπιού", name: "buttonText", widget: "string"}
+      - label: "Ενότητα Σχετικά"
         name: "about"
         widget: "object"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-      - label: "Services Section"
+          - {label: "Τίτλος", name: "title", widget: "string"}
+      - label: "Ενότητα Υπηρεσιών"
         name: "services"
         widget: "object"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-      - label: "Contact Section"
+          - {label: "Τίτλος", name: "title", widget: "string"}
+      - label: "Ενότητα Επικοινωνίας"
         name: "contact"
         widget: "object"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Τίτλος", name: "title", widget: "string"}
 
   - name: "home-en"
     label: "Home Page (EN)"
@@ -135,42 +135,42 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
 
   - name: "about-el"
-    label: "About Page (GR)"
+    label: "Σελίδα Σχετικά (ΕΛ)"
     files:
       - name: "general"
-        label: "General Info & Education"
+        label: "Γενικές Πληροφορίες & Εκπαίδευση"
         file: "content/about/el/about.json"
         fields:
           - {label: "File Name", name: "file_name", widget: "hidden", default: "about"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
-          - {label: "Image Alt Text", name: "imageAlt", widget: "string"}
-          - label: "Hero"
+          - {label: "Τίτλος", name: "title", widget: "string"}
+          - {label: "Περιγραφή", name: "description", widget: "text"}
+          - {label: "Εναλλακτικό Κείμενο Εικόνας", name: "imageAlt", widget: "string"}
+          - label: "Εισαγωγική Ενότητα"
             name: "hero"
             widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-          - label: "Education"
+              - {label: "Τίτλος", name: "title", widget: "string"}
+          - label: "Εκπαίδευση"
             name: "education"
             widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Image Alt", name: "imageAlt", widget: "string"}
-              - label: "Education Items"
+              - {label: "Τίτλος", name: "title", widget: "string"}
+              - {label: "Εναλλακτικό Κείμενο Εικόνας", name: "imageAlt", widget: "string"}
+              - label: "Στοιχεία Εκπαίδευσης"
                 name: "items"
                 widget: "list"
-                field: {label: "Item", name: "item", widget: "text"}
+                field: {label: "Στοιχείο", name: "item", widget: "text"}
       - name: "faq"
-        label: "FAQ"
+        label: "Συχνές Ερωτήσεις"
         file: "content/about/el/faq.json"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - label: "FAQ Items"
+          - {label: "Τίτλος", name: "title", widget: "string"}
+          - label: "Ερωτήσεις & Απαντήσεις"
             name: "items"
             widget: "list"
             fields:
-              - {label: "Question", name: "question", widget: "string"}
-              - {label: "Answer", name: "answer", widget: "text"}
+              - {label: "Ερώτηση", name: "question", widget: "string"}
+              - {label: "Απάντηση", name: "answer", widget: "text"}
 
   - name: "about-en"
     label: "About Page (EN)"
@@ -211,81 +211,81 @@ collections:
               - {label: "Answer", name: "answer", widget: "text"}
 
   - name: "services-contact-el"
-    label: "Services & Contact Page (GR)"
+    label: "Υπηρεσίες & Επικοινωνία (ΕΛ)"
     files:
       - name: "services"
-        label: "Services"
+        label: "Υπηρεσίες"
         file: "content/services/el/services.json"
         fields:
           - {label: "File Name", name: "file_name", widget: "hidden", default: "services"}
-          - {label: "Page Title", name: "title", widget: "string"}
-          - {label: "Read More Text", name: "readMore", widget: "string"}
-          - label: "Hero"
+          - {label: "Τίτλος Σελίδας", name: "title", widget: "string"}
+          - {label: "Κείμενο 'Περισσότερα'", name: "readMore", widget: "string"}
+          - label: "Εισαγωγική Ενότητα"
             name: "hero"
             widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-          - label: "Service Items"
+              - {label: "Τίτλος", name: "title", widget: "string"}
+          - label: "Υπηρεσίες"
             name: "items"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Content", name: "content", widget: "text"}
-              - {label: "Duration", name: "duration", widget: "string"}
-              - {label: "Price", name: "price", widget: "string"}
-          - label: "Services & Contact Hero"
+              - {label: "Τίτλος", name: "title", widget: "string"}
+              - {label: "Περιεχόμενο", name: "content", widget: "text"}
+              - {label: "Διάρκεια", name: "duration", widget: "string"}
+              - {label: "Τιμή", name: "price", widget: "string"}
+          - label: "Τίτλος Ενότητας Υπηρεσίες & Επικοινωνία"
             name: "servicesContactHero"
             widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Τίτλος", name: "title", widget: "string"}
       - name: "contact-form"
-        label: "Contact Form"
+        label: "Φόρμα Επικοινωνίας"
         file: "content/contact/el/form.json"
         fields:
-          - {label: "First Name", name: "firstName", widget: "string"}
-          - {label: "Last Name", name: "lastName", widget: "string"}
+          - {label: "Όνομα", name: "firstName", widget: "string"}
+          - {label: "Επώνυμο", name: "lastName", widget: "string"}
           - {label: "Email", name: "email", widget: "string"}
-          - {label: "Phone", name: "phone", widget: "string"}
-          - {label: "Address", name: "address", widget: "string"}
-          - {label: "Submit Button", name: "cta", widget: "string"}
+          - {label: "Τηλέφωνο", name: "phone", widget: "string"}
+          - {label: "Διεύθυνση", name: "address", widget: "string"}
+          - {label: "Κείμενο Κουμπιού", name: "cta", widget: "string"}
       - name: "contact-info"
-        label: "Contact Info"
+        label: "Στοιχεία Επικοινωνίας"
         file: "content/contact/el/contact.json"
         fields:
           - {label: "File Name", name: "file_name", widget: "hidden", default: "contact"}
-          - label: "Hero"
+          - label: "Εισαγωγική Ενότητα"
             name: "hero"
             widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-          - {label: "Info Label", name: "info", widget: "string"}
+              - {label: "Τίτλος", name: "title", widget: "string"}
+          - {label: "Ετικέτα Πληροφοριών", name: "info", widget: "string"}
       - name: "working-hours"
-        label: "Working Hours"
+        label: "Ωράριο Λειτουργίας"
         file: "content/contact/el/workingHours.json"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Weekdays", name: "weekdays", widget: "string"}
-          - {label: "Saturday", name: "saturday", widget: "string"}
-          - {label: "Sunday", name: "sunday", widget: "string"}
+          - {label: "Τίτλος", name: "title", widget: "string"}
+          - {label: "Καθημερινές", name: "weekdays", widget: "string"}
+          - {label: "Σάββατο", name: "saturday", widget: "string"}
+          - {label: "Κυριακή", name: "sunday", widget: "string"}
       - name: "locations"
-        label: "Practice Locations"
+        label: "Τοποθεσίες"
         file: "content/contact/el/practiceLocations.json"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - label: "Locations"
+          - {label: "Τίτλος", name: "title", widget: "string"}
+          - label: "Τοποθεσίες"
             name: "locations"
             widget: "list"
             fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Street", name: "street", widget: "string"}
-              - {label: "City", name: "city", widget: "string"}
+              - {label: "Όνομα", name: "name", widget: "string"}
+              - {label: "Οδός", name: "street", widget: "string"}
+              - {label: "Πόλη", name: "city", widget: "string"}
               - {label: "Email", name: "email", widget: "string"}
-              - {label: "Phone", name: "tel", widget: "string"}
-              - {label: "Fax", name: "fax", widget: "string"}
-              - {label: "Instagram URL", name: "instagram", widget: "string"}
-              - {label: "Instagram Label", name: "instagramLabel", widget: "string"}
-              - {label: "Facebook URL", name: "facebook", widget: "string"}
-              - {label: "Facebook Label", name: "facebookLabel", widget: "string"}
+              - {label: "Τηλέφωνο", name: "tel", widget: "string"}
+              - {label: "Φαξ", name: "fax", widget: "string"}
+              - {label: "URL Instagram", name: "instagram", widget: "string"}
+              - {label: "Κείμενο Instagram", name: "instagramLabel", widget: "string"}
+              - {label: "URL Facebook", name: "facebook", widget: "string"}
+              - {label: "Κείμενο Facebook", name: "facebookLabel", widget: "string"}
 
   - name: "services-contact-en"
     label: "Services & Contact Page (EN)"
