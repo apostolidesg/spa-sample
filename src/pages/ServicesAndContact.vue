@@ -9,6 +9,12 @@
         <ServiceBlock :showIcon="true" />
       </div>
     </div>
+    <SectionSeparator :content="$t('home.contact.title')" theme="dark-green" />
+    <div class="form-section">
+      <div class="spa-container">
+        <ContactUs />
+      </div>
+    </div>
     <SectionSeparator :content="$t('contact.info')" theme="light-green" />
     <div class="info-section">
       <div class="spa-container">
@@ -23,6 +29,7 @@ import HeroBlock from "../components/common/HeroBlock.vue";
 import SectionSeparator from "../components/common/SectionSeparator.vue";
 import ContactInfoBlock from "../components/ContactInfo.vue";
 import ServiceBlock from "../components/ServiceBlock.vue";
+import ContactUs from "../components/ContactUs.vue";
 export default {
   name: "ServicesAndContact",
   components: {
@@ -30,6 +37,7 @@ export default {
     SectionSeparator,
     ContactInfoBlock,
     ServiceBlock,
+    ContactUs,
   },
 };
 </script>
@@ -39,6 +47,10 @@ export default {
 
 .services-contact-section {
   background-color: $background-color-primary;
+}
+.form-section {
+  background-color: $background-color-secondary;
+  padding: 3em 0;
 }
 .info-section {
   background-color: $background-color-secondary;
