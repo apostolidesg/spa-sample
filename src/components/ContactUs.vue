@@ -1,50 +1,97 @@
 <template>
-  <div class="contact-us">
-    <div v-if="submitted" class="contact-us__success">
-      <p>{{ $t("contact.form.successMessage") }}</p>
+  <div class="contact-form">
+    <h2 class="contact-form__title">{{ $t("contact.form.title") }}</h2>
+
+    <div class="contact-form__card">
+      <div v-if="submitted" class="contact-form__success">
+        {{ $t("contact.form.successMessage") }}
+      </div>
+
+      <form
+        v-else
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        @submit.prevent="submitForm"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
+
+        <div class="contact-form__fields">
+          <div class="contact-form__field">
+            <label for="firstName">{{ $t("contact.form.firstName") }}</label>
+            <input
+              id="firstName"
+              v-model="form.firstName"
+              type="text"
+              name="firstName"
+              placeholder="Maria"
+              required
+            />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="lastName">{{ $t("contact.form.lastName") }}</label>
+            <input
+              id="lastName"
+              v-model="form.lastName"
+              type="text"
+              name="lastName"
+              placeholder="Konstantinou"
+              required
+            />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="email">{{ $t("contact.form.email") }}</label>
+            <input
+              id="email"
+              v-model="form.email"
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="phone">{{ $t("contact.form.phone") }}</label>
+            <input
+              id="phone"
+              v-model="form.phone"
+              type="tel"
+              name="phone"
+              placeholder="+30 690 000 0000"
+              required
+            />
+          </div>
+
+          <div class="contact-form__field contact-form__field--full">
+            <label for="address">{{ $t("contact.form.address") }}</label>
+            <input
+              id="address"
+              v-model="form.address"
+              type="text"
+              name="address"
+              placeholder="Street, City"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="contact-form__footer">
+          <button type="submit" class="contact-form__submit" :disabled="submitting">
+            <span>{{ $t("contact.form.cta") }}</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.33331 8H12.6666" stroke="white" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 3.33331L12.6667 7.99998L8 12.6666" stroke="white" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="contact-form__privacy">{{ $t("contact.form.privacyNote") }}</p>
+        </div>
+      </form>
     </div>
-
-    <form
-      v-else
-      class="contact-us__form"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      @submit.prevent="submitForm"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <input type="hidden" name="bot-field" />
-
-      <div class="contact-us__form-group">
-        <label for="firstName">{{ $t("contact.form.firstName") }}</label>
-        <input id="firstName" v-model="form.firstName" type="text" name="firstName" required />
-      </div>
-
-      <div class="contact-us__form-group">
-        <label for="lastName">{{ $t("contact.form.lastName") }}</label>
-        <input id="lastName" v-model="form.lastName" type="text" name="lastName" required />
-      </div>
-
-      <div class="contact-us__form-group contact-us__form-group--email">
-        <label for="email">{{ $t("contact.form.email") }}</label>
-        <input id="email" v-model="form.email" type="email" name="email" required />
-      </div>
-
-      <div class="contact-us__form-group">
-        <label for="phone">{{ $t("contact.form.phone") }}</label>
-        <input id="phone" v-model="form.phone" type="text" name="phone" required />
-      </div>
-
-      <div class="contact-us__form-group">
-        <label for="address">{{ $t("contact.form.address") }}</label>
-        <input id="address" v-model="form.address" type="text" name="address" required />
-      </div>
-
-      <button type="submit" class="contact-us__form-group--cta" :disabled="submitting">
-        {{ $t("contact.form.cta") }}
-      </button>
-    </form>
   </div>
 </template>
 
@@ -78,7 +125,7 @@ export default {
         });
         this.submitted = true;
       } catch {
-        // silently fail — form fields remain so the user can retry
+        // silently fail — fields remain so the user can retry
       } finally {
         this.submitting = false;
       }
@@ -89,83 +136,152 @@ export default {
 
 <style lang="scss" scoped>
 @use "../assets/scss/variables" as *;
-.contact-us {
-  &__success {
-    text-align: center;
-    padding: 3em;
-    font-size: 1.2em;
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  &__title {
+    font-family: "Fraunces", serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.1;
     color: $background-color-primary;
-    font-weight: bold;
+    text-align: center;
+    margin: 0;
   }
 
-  &__form {
+  &__card {
+    width: 100%;
+    background: $default-white;
+    border-radius: 24px;
+    box-shadow: 0px 24px 64px -24px rgba(6, 72, 72, 0.22);
+    padding: 48px;
+    box-sizing: border-box;
+  }
+
+  &__success {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: $background-color-primary;
+    padding: 2em 0;
+  }
+
+  &__fields {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    column-gap: 2em;
-    row-gap: 2em;
-    width: 80%;
-    margin: auto;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
 
-    &-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5em;
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 
-      &--email,
-      &--cta {
-        grid-column-start: 1;
-        grid-column-end: 3;
+    &--full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-family: "Inter", sans-serif;
+      font-size: 13.6px;
+      font-weight: 500;
+      line-height: 20.4px;
+      letter-spacing: 0.27px;
+      color: $color-secondary;
+    }
+
+    input {
+      font-family: "Inter", sans-serif;
+      font-size: 15.2px;
+      font-weight: 400;
+      color: $color-secondary;
+      background: $default-white;
+      border: none;
+      outline: 1px solid #cfdedb;
+      border-radius: 14px;
+      padding: 14px 16px;
+      transition: outline-color 0.2s ease;
+
+      &::placeholder {
+        color: rgba(153, 178, 174, 0.8);
       }
 
-      &--cta {
-        width: 70%;
-        font-size: 1em;
-        font-weight: 700;
-        padding: 1em 2em;
-        color: $default-white;
-        background: $background-color-primary;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: background 0.3s ease, color 0.3s ease;
-        margin: auto;
-
-        &:hover {
-          color: $color-primary;
-        }
-
-        &:disabled {
-          opacity: 0.6;
-          cursor: not-allowed;
-        }
-      }
-
-      label {
-        font-size: 1em;
-        color: $background-color-primary;
-        font-weight: bold;
-      }
-
-      input {
-        border: none;
-        border-bottom: 2px solid $background-color-primary;
-        outline: none;
-        padding: 1em;
-        font-size: 1em;
-        color: $color-secondary;
+      &:focus {
+        outline: 2px solid $background-color-primary;
       }
     }
   }
-  @media (max-width: 768px) {
-    &__form {
-      display: flex;
-      flex-direction: column;
 
-      &-group {
-        &--cta {
-          width: 100%;
-        }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 25px;
+    border-top: 1px solid $background-color-secondary;
+  }
+
+  &__submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 24px;
+    background: $background-color-primary;
+    color: $default-white;
+    font-family: "Inter", sans-serif;
+    font-size: 15.2px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 8px 24px -8px rgba(6, 72, 72, 0.5);
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover:not(:disabled) {
+      background: $background-color-primary-light;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+
+  &__privacy {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $color-primary;
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    &__title {
+      font-size: 32px;
+    }
+
+    &__card {
+      padding: 32px 24px;
+    }
+
+    &__fields {
+      grid-template-columns: 1fr;
+
+      &--full {
+        grid-column: 1;
       }
     }
   }
