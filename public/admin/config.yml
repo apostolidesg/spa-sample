@@ -7,7 +7,7 @@ public_folder: "/images"
 
 collections:
   - name: "common-el"
-    label: "Μενού (ΕΛ)"
+    label: "Πλοήγηση (ΕΛ)"
     folder: "content/common/el"
     create: false
     delete: false
@@ -38,7 +38,7 @@ collections:
           - {label: "Εναλλαγή Γλώσσας", name: "language", widget: "string"}
 
   - name: "common-en"
-    label: "Menu (EN)"
+    label: "Navbar (EN)"
     folder: "content/common/en"
     create: false
     delete: false
