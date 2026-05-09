@@ -4,5 +4,6 @@
   "email": "Email",
   "phone": "Phone",
   "address": "Address",
-  "cta": "Submit"
+  "cta": "Submit",
+  "successMessage": "Thank you! Your message has been sent successfully."
 }

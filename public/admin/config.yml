@@ -248,6 +248,7 @@ collections:
           - {label: "Τηλέφωνο", name: "phone", widget: "string"}
           - {label: "Διεύθυνση", name: "address", widget: "string"}
           - {label: "Κείμενο Κουμπιού", name: "cta", widget: "string"}
+          - {label: "Μήνυμα Επιτυχίας", name: "successMessage", widget: "string"}
       - name: "contact-info"
         label: "Στοιχεία Επικοινωνίας"
         file: "content/contact/el/contact.json"
@@ -325,6 +326,7 @@ collections:
           - {label: "Phone", name: "phone", widget: "string"}
           - {label: "Address", name: "address", widget: "string"}
           - {label: "Submit Button", name: "cta", widget: "string"}
+          - {label: "Success Message", name: "successMessage", widget: "string"}
       - name: "contact-info"
         label: "Contact Info"
         file: "content/contact/en/contact.json"
