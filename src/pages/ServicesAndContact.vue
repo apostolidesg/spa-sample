@@ -53,6 +53,6 @@ export default {
   padding: 5em 0 6em;
 }
 .info-section {
-  background-color: $background-color-secondary;
+  background-color: $background-color-primary;
 }
 </style>
