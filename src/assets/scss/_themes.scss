@@ -1,0 +1,19 @@
+// _themes.scss
+@use "variables" as *;
+
+@mixin theme-dark {
+  background-color: $background-color-primary;
+  --color-text: #{$default-white};
+  --color-text-secondary: #{$background-color-secondary};
+}
+
+@mixin theme-light {
+  background-color: $background-color-secondary;
+  --color-text: #{$background-color-primary};
+  --color-text-secondary: #{$color-secondary};
+}
+
+@mixin theme-white {
+  --color-text: #{$background-color-primary};
+  --color-text-secondary: #{$color-secondary};
+}
