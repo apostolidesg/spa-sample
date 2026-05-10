@@ -43,16 +43,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../assets/scss/variables" as *;
+@use "../assets/scss/themes" as *;
 
 .services-contact-section {
-  background-color: $background-color-primary;
+  @include theme-dark;
 }
 .form-section {
-  background-color: $background-color-secondary;
+  @include theme-light;
   padding: 5em 0 6em;
 }
 .info-section {
-  background-color: $background-color-primary;
+  @include theme-dark;
 }
 </style>

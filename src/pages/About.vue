@@ -56,8 +56,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../assets/scss/variables" as *;
+@use "../assets/scss/themes" as *;
+
+.about-section {
+  @include theme-white;
+}
 .faq-section {
-  background-color: $background-color-primary;
+  @include theme-dark;
 }
 </style>

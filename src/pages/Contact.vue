@@ -40,9 +40,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../assets/scss/variables" as *;
+@use "../assets/scss/themes" as *;
 
+.contact-section {
+  @include theme-white;
+}
 .info-section {
-  background-color: $background-color-secondary;
+  @include theme-light;
 }
 </style>
