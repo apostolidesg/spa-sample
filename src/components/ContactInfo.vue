@@ -89,7 +89,7 @@ export default {
 
     &-title {
       font-size: 2em;
-      color: $background-color-primary;
+      color: var(--color-text);
       margin-bottom: 0.5em;
       font-weight: 700;
     }
@@ -97,7 +97,7 @@ export default {
   &__hours {
     &-item {
       font-size: 1.1em;
-      color: $background-color-primary;
+      color: var(--color-text);
       min-height: 30px;
     }
   }
@@ -110,7 +110,7 @@ export default {
         flex-direction: column;
         gap: 0.5em;
         font-size: 1.1em;
-        color: $background-color-primary;
+        color: var(--color-text);
 
         span {
           min-height: 30px;
@@ -122,14 +122,14 @@ export default {
     display: block;
     width: 40px;
     height: 2px;
-    background-color: #064848;
+    background-color: var(--color-text);
     margin: 20px 0;
   }
   .social-link {
     display: inline-flex;
     align-items: center;
     gap: 0.5em;
-    color: $background-color-primary;
+    color: var(--color-text);
     text-decoration: none;
     transition: color 0.2s ease;
 
