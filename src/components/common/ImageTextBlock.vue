@@ -126,11 +126,11 @@ export default {
     &--title {
       font-size: 2em;
       font-weight: 700;
-      color: $background-color-primary;
+      color: var(--color-text);
     }
     &--descr {
       font-size: 1.5em;
-      color: $color-secondary;
+      color: var(--color-text-secondary);
     }
     .bullet {
       display: list-item;
