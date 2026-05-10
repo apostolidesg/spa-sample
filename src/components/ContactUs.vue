@@ -151,7 +151,7 @@ export default {
     font-size: 44px;
     font-weight: 400;
     line-height: 1.1;
-    color: $background-color-primary;
+    color: var(--color-text);
     text-align: center;
     margin: 0;
   }
