@@ -82,7 +82,7 @@ export default {
     width: 20%;
     text-align: center;
     font-size: 2em;
-    color: $default-white;
+    color: var(--color-text);
   }
 
   &__icon {
@@ -95,7 +95,7 @@ export default {
   }
   &__label {
     width: 60%;
-    color: white;
+    color: var(--color-text);
     font-size: 1.5em;
     line-height: 1.5em;
 
@@ -104,7 +104,7 @@ export default {
     }
   }
   &__extra-info {
-    color: #d8efed;
+    color: var(--color-text-secondary);
     font-size: 1.2em;
     line-height: 1.5em;
   }

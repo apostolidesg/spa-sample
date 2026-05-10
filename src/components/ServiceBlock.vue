@@ -68,7 +68,7 @@ export default {
 
   &__title {
     font-size: 2em;
-    color: $default-white;
+    color: var(--color-text);
     text-align: center;
   }
   &__wrapper {
