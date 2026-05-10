@@ -15,7 +15,7 @@
         <ContactUs />
       </div>
     </div>
-    <SectionSeparator :content="$t('contact.info')" theme="light-green" />
+    <SectionSeparator :content="$t('contact.info')" theme="white" />
     <div class="info-section">
       <div class="spa-container">
         <ContactInfoBlock />
