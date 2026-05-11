@@ -11,7 +11,7 @@ collections:
     files:
       - name: "menu"
         label: "Πλοήγηση"
-        file: "content/menu/el/common.json"
+        file: "content/menu/el/menu.json"
         fields:
           - label: "Λογότυπο"
             name: "logo"
@@ -35,7 +35,7 @@ collections:
     files:
       - name: "menu"
         label: "Navigation"
-        file: "content/menu/en/common.json"
+        file: "content/menu/en/menu.json"
         fields:
           - label: "Logo"
             name: "logo"
