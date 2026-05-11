@@ -78,6 +78,17 @@
               required
             />
           </div>
+
+          <div class="contact-form__field contact-form__field--full">
+            <label for="message">{{ $t("contact.form.message") }}</label>
+            <textarea
+              id="message"
+              v-model="form.message"
+              name="message"
+              rows="4"
+              :placeholder="$t('contact.form.message')"
+            ></textarea>
+          </div>
         </div>
 
         <div class="contact-form__footer">
@@ -106,6 +117,7 @@ export default {
         email: "",
         phone: "",
         address: "",
+        message: "",
       },
       submitting: false,
       submitted: false,
@@ -210,6 +222,28 @@ export default {
       border-radius: 14px;
       padding: 14px 16px;
       transition: outline-color 0.2s ease;
+
+      &::placeholder {
+        color: rgba(153, 178, 174, 0.8);
+      }
+
+      &:focus {
+        outline: 2px solid $background-color-primary;
+      }
+    }
+
+    textarea {
+      font-family: "Inter", sans-serif;
+      font-size: 15.2px;
+      font-weight: 400;
+      color: $color-secondary;
+      background: $default-white;
+      border: none;
+      outline: 1px solid #cfdedb;
+      border-radius: 14px;
+      padding: 14px 16px;
+      transition: outline-color 0.2s ease;
+      resize: vertical;
 
       &::placeholder {
         color: rgba(153, 178, 174, 0.8);
