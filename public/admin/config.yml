@@ -61,7 +61,7 @@ collections:
       - {label: "Language Toggle", name: "language", widget: "string"}
 
   - name: "home-el"
-    label: "Αρχική Σελίδα (ΕΛ)"
+    label: "Αρχική (ΕΛ)"
     folder: "content/home/el"
     create: false
     delete: false
@@ -94,7 +94,7 @@ collections:
           - {label: "Τίτλος", name: "title", widget: "string"}
 
   - name: "home-en"
-    label: "Αρχική Σελίδα (EN)"
+    label: "Αρχική (EN)"
     folder: "content/home/en"
     create: false
     delete: false
@@ -127,7 +127,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
 
   - name: "about-el"
-    label: "Σελίδα Σχετικά (ΕΛ)"
+    label: "Σχετικά (ΕΛ)"
     files:
       - name: "general"
         label: "Γενικές Πληροφορίες & Εκπαίδευση"
@@ -165,7 +165,7 @@ collections:
               - {label: "Απάντηση", name: "answer", widget: "text"}
 
   - name: "about-en"
-    label: "Σελίδα Σχετικά (EN)"
+    label: "Σχετικά (EN)"
     files:
       - name: "general"
         label: "General Info & Education"
