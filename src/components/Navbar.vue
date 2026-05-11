@@ -25,6 +25,7 @@
           v-for="route in routes"
           :key="route.name"
           class="navigation-bar__desktop--routes-item"
+          :class="{ 'navigation-bar__desktop--routes-item--active': route.name === currentRouteName }"
           @click="navigateTo(route.name)"
         >
           {{ $t(route.label) }}
@@ -55,6 +56,9 @@ export default {
   computed: {
     isMobileView() {
       return this.isMobile ? "mobile" : "desktop";
+    },
+    currentRouteName() {
+      return this.$route.name;
     },
   },
   methods: {
@@ -132,6 +136,12 @@ export default {
       &-item:hover {
         cursor: pointer;
         color: $background-color-secondary;
+      }
+
+      &-item--active {
+        color: $background-color-secondary;
+        border-bottom: 2px solid $background-color-secondary;
+        padding-bottom: 2px;
       }
     }
     &--language-switcher:hover {
