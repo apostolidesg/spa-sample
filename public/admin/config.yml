@@ -94,7 +94,7 @@ collections:
           - {label: "Τίτλος", name: "title", widget: "string"}
 
   - name: "home-en"
-    label: "Home Page (EN)"
+    label: "Αρχική Σελίδα (EN)"
     folder: "content/home/en"
     create: false
     delete: false
@@ -165,7 +165,7 @@ collections:
               - {label: "Απάντηση", name: "answer", widget: "text"}
 
   - name: "about-en"
-    label: "About Page (EN)"
+    label: "Σελίδα Σχετικά (EN)"
     files:
       - name: "general"
         label: "General Info & Education"
@@ -283,7 +283,7 @@ collections:
               - {label: "Κείμενο Facebook", name: "facebookLabel", widget: "string"}
 
   - name: "services-contact-en"
-    label: "Services & Contact Page (EN)"
+    label: "Υπηρεσίες & Επικοινωνία (EN)"
     files:
       - name: "services"
         label: "Services"
