@@ -36,7 +36,7 @@ function transformContent(content) {
   const transformed = {};
 
   for (const [file, data] of Object.entries(content)) {
-    if (file === 'common') {
+    if (file === 'menu') {
       const { file_name, ...navbarData } = data;
       transformed.navbar = navbarData;
     } else if (file === 'home') {

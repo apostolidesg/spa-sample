@@ -8,7 +8,7 @@ public_folder: "/images"
 collections:
   - name: "common-el"
     label: "Πλοήγηση (ΕΛ)"
-    folder: "content/common/el"
+    folder: "content/menu/el"
     create: false
     delete: false
     extension: "json"
@@ -35,7 +35,7 @@ collections:
 
   - name: "common-en"
     label: "Πλοήγηση (EN)"
-    folder: "content/common/en"
+    folder: "content/menu/en"
     create: false
     delete: false
     extension: "json"
