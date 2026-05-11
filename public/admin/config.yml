@@ -71,16 +71,19 @@ collections:
           - label: "Ενότητα Σχετικά"
             name: "about"
             widget: "object"
+            hint: "Μόνο ο τίτλος της ενότητας. Για το πλήρες περιεχόμενο, επεξεργαστείτε τη συλλογή «Σχετικά»."
             fields:
               - {label: "Τίτλος", name: "title", widget: "string"}
           - label: "Ενότητα Υπηρεσιών"
             name: "services"
             widget: "object"
+            hint: "Μόνο ο τίτλος της ενότητας. Για το πλήρες περιεχόμενο, επεξεργαστείτε τη συλλογή «Υπηρεσίες & Επικοινωνία»."
             fields:
               - {label: "Τίτλος", name: "title", widget: "string"}
           - label: "Ενότητα Επικοινωνίας"
             name: "contact"
             widget: "object"
+            hint: "Μόνο ο τίτλος της ενότητας. Για το πλήρες περιεχόμενο, επεξεργαστείτε τη συλλογή «Υπηρεσίες & Επικοινωνία»."
             fields:
               - {label: "Τίτλος", name: "title", widget: "string"}
 
@@ -101,16 +104,19 @@ collections:
           - label: "About Section"
             name: "about"
             widget: "object"
+            hint: "Section heading only. To edit the full content, go to the «Σχετικά» collection."
             fields:
               - {label: "Title", name: "title", widget: "string"}
           - label: "Services Section"
             name: "services"
             widget: "object"
+            hint: "Section heading only. To edit the full content, go to the «Υπηρεσίες & Επικοινωνία» collection."
             fields:
               - {label: "Title", name: "title", widget: "string"}
           - label: "Contact Section"
             name: "contact"
             widget: "object"
+            hint: "Section heading only. To edit the full content, go to the «Υπηρεσίες & Επικοινωνία» collection."
             fields:
               - {label: "Title", name: "title", widget: "string"}
 
