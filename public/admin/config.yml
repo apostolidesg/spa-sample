@@ -296,6 +296,7 @@ collections:
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Τηλέφωνο", name: "phone", widget: "string" }
           - { label: "Διεύθυνση", name: "address", widget: "string" }
+          - { label: "Σχόλια", name: "message", widget: "text" }
           - { label: "Κείμενο Κουμπιού", name: "cta", widget: "string" }
           - {
               label: "Σημείωση Απορρήτου",
@@ -400,6 +401,7 @@ collections:
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Phone", name: "phone", widget: "string" }
           - { label: "Address", name: "address", widget: "string" }
+          - { label: "Comments", name: "message", widget: "text" }
           - { label: "Submit Button", name: "cta", widget: "string" }
           - { label: "Privacy Note", name: "privacyNote", widget: "string" }
           - {
