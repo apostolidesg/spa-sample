@@ -5,6 +5,7 @@
   "email": "Email",
   "phone": "Phone",
   "address": "Address",
+  "message": "Comments",
   "cta": "Send message",
   "privacyNote": "Your details are kept private and used only to reply to you.",
   "successMessage": "Thank you! Your message has been sent successfully."
