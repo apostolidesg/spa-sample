@@ -93,15 +93,23 @@ collections:
           - label: "Ενότητα Υπηρεσιών"
             name: "services"
             widget: "object"
-            hint: "Μόνο ο τίτλος της ενότητας. Για το πλήρες περιεχόμενο, επεξεργαστείτε τη συλλογή «Υπηρεσίες & Επικοινωνία»."
             fields:
-              - { label: "Τίτλος", name: "title", widget: "string" }
+              - {
+                  label: "Τίτλος",
+                  name: "title",
+                  widget: "string",
+                  hint: "Μόνο ο τίτλος της ενότητας. Για το πλήρες περιεχόμενο, επεξεργαστείτε τη συλλογή «Υπηρεσίες & Επικοινωνία».",
+                }
           - label: "Ενότητα Επικοινωνίας"
             name: "contact"
             widget: "object"
-            hint: "Μόνο ο τίτλος της ενότητας. Για το πλήρες περιεχόμενο, επεξεργαστείτε τη συλλογή «Υπηρεσίες & Επικοινωνία»."
             fields:
-              - { label: "Τίτλος", name: "title", widget: "string" }
+              - {
+                  label: "Τίτλος",
+                  name: "title",
+                  widget: "string",
+                  hint: "Μόνο ο τίτλος της ενότητας. Για το πλήρες περιεχόμενο, επεξεργαστείτε τη συλλογή «Υπηρεσίες & Επικοινωνία».",
+                }
 
   - name: "home-en"
     label: "Αρχική (EN)"
@@ -120,21 +128,33 @@ collections:
           - label: "About Section"
             name: "about"
             widget: "object"
-            hint: "Section heading only. To edit the full content, go to the «Σχετικά» collection."
             fields:
-              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  hint: "Section heading only. To edit the full content, go to the «Σχετικά» collection.",
+                }
           - label: "Services Section"
             name: "services"
             widget: "object"
-            hint: "Section heading only. To edit the full content, go to the «Υπηρεσίες & Επικοινωνία» collection."
             fields:
-              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  hint: "Section heading only. To edit the full content, go to the «Υπηρεσίες & Επικοινωνία» collection.",
+                }
           - label: "Contact Section"
             name: "contact"
             widget: "object"
-            hint: "Section heading only. To edit the full content, go to the «Υπηρεσίες & Επικοινωνία» collection."
             fields:
-              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  hint: "Section heading only. To edit the full content, go to the «Υπηρεσίες & Επικοινωνία» collection.",
+                }
 
   - name: "about-el"
     label: "Σχετικά (ΕΛ)"
