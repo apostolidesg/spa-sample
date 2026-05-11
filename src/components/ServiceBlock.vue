@@ -13,7 +13,6 @@
         :title="service.title"
         :content="service.content"
         :duration="service.duration"
-        :price="service.price"
         :showIcon="showIcon"
       />
     </div>

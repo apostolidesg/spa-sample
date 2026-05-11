@@ -52,7 +52,6 @@
           </div>
           <div class="line-separator"></div>
           <span>{{ location.tel }}</span>
-          <span v-if="hasFax">{{ location.fax }}</span>
         </div>
       </div>
     </div>
@@ -62,11 +61,6 @@
 <script>
 export default {
   name: "ContactInfoBlock",
-  data() {
-    return {
-      hasFax: false,
-    };
-  },
   computed: {
     locations() {
       return this.$tm('contact.practiceLocations.locations');

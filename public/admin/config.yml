@@ -281,7 +281,6 @@ collections:
               - { label: "Τίτλος", name: "title", widget: "string" }
               - { label: "Περιεχόμενο", name: "content", widget: "text" }
               - { label: "Διάρκεια", name: "duration", widget: "string" }
-              - { label: "Τιμή", name: "price", widget: "string" }
           - label: "Τίτλος Ενότητας Υπηρεσίες & Επικοινωνία"
             name: "servicesContactHero"
             widget: "object"
@@ -346,7 +345,6 @@ collections:
               - { label: "Πόλη", name: "city", widget: "string" }
               - { label: "Email", name: "email", widget: "string" }
               - { label: "Τηλέφωνο", name: "tel", widget: "string" }
-              - { label: "Φαξ", name: "fax", widget: "string" }
               - { label: "URL Instagram", name: "instagram", widget: "string" }
               - {
                   label: "Κείμενο Instagram",
@@ -387,7 +385,6 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Content", name: "content", widget: "text" }
               - { label: "Duration", name: "duration", widget: "string" }
-              - { label: "Price", name: "price", widget: "string" }
           - label: "Services & Contact Hero"
             name: "servicesContactHero"
             widget: "object"
@@ -448,7 +445,6 @@ collections:
               - { label: "City", name: "city", widget: "string" }
               - { label: "Email", name: "email", widget: "string" }
               - { label: "Phone", name: "tel", widget: "string" }
-              - { label: "Fax", name: "fax", widget: "string" }
               - { label: "Instagram URL", name: "instagram", widget: "string" }
               - {
                   label: "Instagram Label",

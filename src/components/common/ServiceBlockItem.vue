@@ -19,7 +19,6 @@
     </div>
     <div v-if="showIcon" class="service-block-item__extra-info">
       <div>{{ duration }}</div>
-      <!-- <div>{{ price }}</div> -->
     </div>
   </div>
 </template>
@@ -41,10 +40,6 @@ export default {
       default: "",
     },
     duration: {
-      type: String,
-      default: "",
-    },
-    price: {
       type: String,
       default: "",
     },

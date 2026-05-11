@@ -9,26 +9,22 @@
     {
       "title": "Individual CBT Therapy",
       "content": "Therapeutic support based on Cognitive Behavioral Therapy for adults and adolescents.",
-      "duration": "60 min",
-      "price": "€20"
+      "duration": "60 min"
     },
     {
       "title": "Parenting Counseling",
       "content": "Guidance and skills enhancement for parents to support positive upbringing and empathetic communication.",
-      "duration": "60 min",
-      "price": "€20"
+      "duration": "60 min"
     },
     {
       "title": "Support for Vulnerable Groups",
       "content": "Targeted interventions for children on the autism spectrum and other vulnerable social groups.",
-      "duration": "60 min",
-      "price": "€20"
+      "duration": "60 min"
     },
     {
       "title": "Online Psychotherapy Sessions",
       "content": "Individual psychotherapy sessions online or in person, with emphasis on accessibility and flexibility.",
-      "duration": "60 min",
-      "price": "€20"
+      "duration": "60 min"
     }
   ],
   "servicesContactHero": {
