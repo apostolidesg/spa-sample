@@ -8,123 +8,111 @@ public_folder: "/images"
 collections:
   - name: "common-el"
     label: "Πλοήγηση (ΕΛ)"
-    folder: "content/menu/el"
-    create: false
-    delete: false
-    extension: "json"
-    format: "json"
-    identifier_field: file_name
-    fields:
-      - {label: "Πλοήγηση", name: "file_name", widget: "hidden", default: "common"}
-      - label: "Λογότυπο"
-        name: "logo"
-        widget: "object"
+    files:
+      - name: "menu"
+        label: "Πλοήγηση"
+        file: "content/menu/el/common.json"
         fields:
-          - {label: "Όνομα", name: "name", widget: "string"}
-          - {label: "Τίτλος", name: "title", widget: "string"}
-      - label: "Σύνδεσμοι"
-        name: "routes"
-        widget: "object"
-        fields:
-          - {label: "Αρχική", name: "home", widget: "string"}
-          - {label: "Σχετικά", name: "about", widget: "string"}
-          - {label: "Υπηρεσίες", name: "services", widget: "string"}
-          - {label: "Επικοινωνία", name: "contact", widget: "string"}
-          - {label: "Υπηρεσίες & Επικοινωνία", name: "servicesAndContact", widget: "string"}
-      - {label: "Εναλλαγή Γλώσσας", name: "language", widget: "string"}
+          - label: "Λογότυπο"
+            name: "logo"
+            widget: "object"
+            fields:
+              - {label: "Όνομα", name: "name", widget: "string"}
+              - {label: "Τίτλος", name: "title", widget: "string"}
+          - label: "Σύνδεσμοι"
+            name: "routes"
+            widget: "object"
+            fields:
+              - {label: "Αρχική", name: "home", widget: "string"}
+              - {label: "Σχετικά", name: "about", widget: "string"}
+              - {label: "Υπηρεσίες", name: "services", widget: "string"}
+              - {label: "Επικοινωνία", name: "contact", widget: "string"}
+              - {label: "Υπηρεσίες & Επικοινωνία", name: "servicesAndContact", widget: "string"}
+          - {label: "Εναλλαγή Γλώσσας", name: "language", widget: "string"}
 
   - name: "common-en"
     label: "Πλοήγηση (EN)"
-    folder: "content/menu/en"
-    create: false
-    delete: false
-    extension: "json"
-    format: "json"
-    identifier_field: file_name
-    fields:
-      - {label: "Navigation", name: "file_name", widget: "hidden", default: "common"}
-      - label: "Logo"
-        name: "logo"
-        widget: "object"
+    files:
+      - name: "menu"
+        label: "Navigation"
+        file: "content/menu/en/common.json"
         fields:
-          - {label: "Name", name: "name", widget: "string"}
-          - {label: "Title", name: "title", widget: "string"}
-      - label: "Routes"
-        name: "routes"
-        widget: "object"
-        fields:
-          - {label: "Home", name: "home", widget: "string"}
-          - {label: "About", name: "about", widget: "string"}
-          - {label: "Services", name: "services", widget: "string"}
-          - {label: "Contact", name: "contact", widget: "string"}
-          - {label: "Services & Contact", name: "servicesAndContact", widget: "string"}
-      - {label: "Language Toggle", name: "language", widget: "string"}
+          - label: "Logo"
+            name: "logo"
+            widget: "object"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+          - label: "Routes"
+            name: "routes"
+            widget: "object"
+            fields:
+              - {label: "Home", name: "home", widget: "string"}
+              - {label: "About", name: "about", widget: "string"}
+              - {label: "Services", name: "services", widget: "string"}
+              - {label: "Contact", name: "contact", widget: "string"}
+              - {label: "Services & Contact", name: "servicesAndContact", widget: "string"}
+          - {label: "Language Toggle", name: "language", widget: "string"}
 
   - name: "home-el"
     label: "Αρχική (ΕΛ)"
-    folder: "content/home/el"
-    create: false
-    delete: false
-    extension: "json"
-    format: "json"
-    identifier_field: file_name
-    fields:
-      - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
-      - label: "Ενότητα Hero"
-        name: "hero"
-        widget: "object"
+    files:
+      - name: "home"
+        label: "Αρχική"
+        file: "content/home/el/home.json"
         fields:
-          - {label: "Όνομα", name: "name", widget: "string"}
-          - {label: "Υπότιτλος", name: "subtitle", widget: "string"}
-          - {label: "Κείμενο Κουμπιού", name: "buttonText", widget: "string"}
-      - label: "Ενότητα Σχετικά"
-        name: "about"
-        widget: "object"
-        fields:
-          - {label: "Τίτλος", name: "title", widget: "string"}
-      - label: "Ενότητα Υπηρεσιών"
-        name: "services"
-        widget: "object"
-        fields:
-          - {label: "Τίτλος", name: "title", widget: "string"}
-      - label: "Ενότητα Επικοινωνίας"
-        name: "contact"
-        widget: "object"
-        fields:
-          - {label: "Τίτλος", name: "title", widget: "string"}
+          - label: "Ενότητα Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Όνομα", name: "name", widget: "string"}
+              - {label: "Υπότιτλος", name: "subtitle", widget: "string"}
+              - {label: "Κείμενο Κουμπιού", name: "buttonText", widget: "string"}
+          - label: "Ενότητα Σχετικά"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Τίτλος", name: "title", widget: "string"}
+          - label: "Ενότητα Υπηρεσιών"
+            name: "services"
+            widget: "object"
+            fields:
+              - {label: "Τίτλος", name: "title", widget: "string"}
+          - label: "Ενότητα Επικοινωνίας"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Τίτλος", name: "title", widget: "string"}
 
   - name: "home-en"
     label: "Αρχική (EN)"
-    folder: "content/home/en"
-    create: false
-    delete: false
-    extension: "json"
-    format: "json"
-    identifier_field: file_name
-    fields:
-      - {label: "File Name", name: "file_name", widget: "hidden", default: "home"}
-      - label: "Hero Section"
-        name: "hero"
-        widget: "object"
+    files:
+      - name: "home"
+        label: "Home"
+        file: "content/home/en/home.json"
         fields:
-          - {label: "Name", name: "name", widget: "string"}
-          - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Button Text", name: "buttonText", widget: "string"}
-      - label: "About Section"
-        name: "about"
-        widget: "object"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-      - label: "Services Section"
-        name: "services"
-        widget: "object"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-      - label: "Contact Section"
-        name: "contact"
-        widget: "object"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Button Text", name: "buttonText", widget: "string"}
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+          - label: "Services Section"
+            name: "services"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+          - label: "Contact Section"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
 
   - name: "about-el"
     label: "Σχετικά (ΕΛ)"
