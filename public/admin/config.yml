@@ -34,7 +34,7 @@ collections:
       - {label: "Εναλλαγή Γλώσσας", name: "language", widget: "string"}
 
   - name: "common-en"
-    label: "Navbar (EN)"
+    label: "Πλοήγηση (EN)"
     folder: "content/common/en"
     create: false
     delete: false
