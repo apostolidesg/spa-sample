@@ -15,27 +15,23 @@ collections:
     format: "json"
     identifier_field: file_name
     fields:
-      - {label: "File Name", name: "file_name", widget: "hidden", default: "common"}
-      - label: "Πλοήγηση"
-        name: "navbar"
+      - {label: "Πλοήγηση", name: "file_name", widget: "hidden", default: "common"}
+      - label: "Λογότυπο"
+        name: "logo"
         widget: "object"
         fields:
-          - label: "Λογότυπο"
-            name: "logo"
-            widget: "object"
-            fields:
-              - {label: "Όνομα", name: "name", widget: "string"}
-              - {label: "Τίτλος", name: "title", widget: "string"}
-          - label: "Σύνδεσμοι"
-            name: "routes"
-            widget: "object"
-            fields:
-              - {label: "Αρχική", name: "home", widget: "string"}
-              - {label: "Σχετικά", name: "about", widget: "string"}
-              - {label: "Υπηρεσίες", name: "services", widget: "string"}
-              - {label: "Επικοινωνία", name: "contact", widget: "string"}
-              - {label: "Υπηρεσίες & Επικοινωνία", name: "servicesAndContact", widget: "string"}
-          - {label: "Εναλλαγή Γλώσσας", name: "language", widget: "string"}
+          - {label: "Όνομα", name: "name", widget: "string"}
+          - {label: "Τίτλος", name: "title", widget: "string"}
+      - label: "Σύνδεσμοι"
+        name: "routes"
+        widget: "object"
+        fields:
+          - {label: "Αρχική", name: "home", widget: "string"}
+          - {label: "Σχετικά", name: "about", widget: "string"}
+          - {label: "Υπηρεσίες", name: "services", widget: "string"}
+          - {label: "Επικοινωνία", name: "contact", widget: "string"}
+          - {label: "Υπηρεσίες & Επικοινωνία", name: "servicesAndContact", widget: "string"}
+      - {label: "Εναλλαγή Γλώσσας", name: "language", widget: "string"}
 
   - name: "common-en"
     label: "Navbar (EN)"
@@ -46,27 +42,23 @@ collections:
     format: "json"
     identifier_field: file_name
     fields:
-      - {label: "File Name", name: "file_name", widget: "hidden", default: "common"}
-      - label: "Navbar"
-        name: "navbar"
+      - {label: "Navigation", name: "file_name", widget: "hidden", default: "common"}
+      - label: "Logo"
+        name: "logo"
         widget: "object"
         fields:
-          - label: "Logo"
-            name: "logo"
-            widget: "object"
-            fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Title", name: "title", widget: "string"}
-          - label: "Routes"
-            name: "routes"
-            widget: "object"
-            fields:
-              - {label: "Home", name: "home", widget: "string"}
-              - {label: "About", name: "about", widget: "string"}
-              - {label: "Services", name: "services", widget: "string"}
-              - {label: "Contact", name: "contact", widget: "string"}
-              - {label: "Services & Contact", name: "servicesAndContact", widget: "string"}
-          - {label: "Language Toggle", name: "language", widget: "string"}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+      - label: "Routes"
+        name: "routes"
+        widget: "object"
+        fields:
+          - {label: "Home", name: "home", widget: "string"}
+          - {label: "About", name: "about", widget: "string"}
+          - {label: "Services", name: "services", widget: "string"}
+          - {label: "Contact", name: "contact", widget: "string"}
+          - {label: "Services & Contact", name: "servicesAndContact", widget: "string"}
+      - {label: "Language Toggle", name: "language", widget: "string"}
 
   - name: "home-el"
     label: "Αρχική Σελίδα (ΕΛ)"
